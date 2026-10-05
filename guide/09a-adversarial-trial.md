@@ -1,0 +1,152 @@
+# 9a. A reproducible adversarial trial for the Step-(xi) edge
+
+**Fixed question:** Under exactly which source-stated maps and
+indeterminacies, if any, does IUT III, Theorem 3.11, justify the
+Step-(xi) numerical comparison used for Corollary 3.12? The target is
+an auditable proposition or a sharply located open obligation, **not**
+an AI vote on whether abc is true.
+
+## Freeze the evidence packet
+
+Use the [source register](sources.md) for official links and edition
+warnings: IUT I Definition 3.1/3.6 and Corollary 3.7(i); IUT II
+Corollary 4.6; the **currently hosted** IUT III Definition 3.8,
+Theorem 3.11, Corollary 3.12 and proof Step (xi); Scholze–Stix
+section 2.2 and equation (1.5); Mochizuki's 2018 comments
+(C12)–(C14) and 2019 report. The old IUT III edition referred to by
+the critics may differ from the hosted one; a matching theorem number
+does not demonstrate that the passages are textually identical.
+After A–C have completed independent readings, introduce the
+[Project LANA interim report, sections 8–10](https://github.com/katobungen/LANA_report_202607/blob/b8e4636edea64d0b9fdc1d7f6a51e63c1f5d1676/LANA_report_202607.pdf#page=40)
+as a *fourth, separate interpretation*, particularly the still-unproved
+compatibility (9-1) on PDF p. 46. Do not retroactively rewrite the
+independent reports to agree with it.
+For the separate formalization boundary, use the immutable LANA
+snapshot in [06](06-lean-boundary.md), not the tip of its default branch.
+The [working model](09-critical-mechanism.md) and
+[dispute guide](05-critical-transition.md) are orientation, not primary
+authority. Private scratch PDFs or extracted texts are not publication
+sources.
+
+## Independent roles, then a dependent formalization
+
+| Role | Bounded assignment | Must not assume |
+| --- | --- | --- |
+| A — faithful proponent reading | From IUT III and Mochizuki's response, reconstruct the strongest source-located transport and estimate, including the indeterminacies | That the response proves the contested comparison |
+| B — critical reading | From Scholze–Stix's own diagram/equation and IUT III, locate the earliest type, scaling, or precision objection and attempt one independent calculation | That Mochizuki's label `(Lin)` is the critics' own wording |
+| C — definitions-only reading | Independently extract objects, theaters, maps, and permitted comparisons from IUT I–III *before* reading either partisan explanation | That familiar names or matching labels identify objects |
+| D — formalizer | After A–C, type-check a minimal claim for **each** incompatible interpretation, including whether report (9-1) is well-typed; prove a toy implication or give a countermodel and list the extra hypothesis needed | That LANA's unproved `Corollary312Variant` formalizes Step (xi) or proves (9-1) |
+
+Give A–C the same fixed question and immutable source packet **without
+sharing their draft conclusions**. D receives their three completed
+reports and must not erase a disagreement by choosing one side's
+types. Each role stops at the bounded edge; no broad "prove abc" prompt.
+
+## Required output from each reading
+
+| Field | Required content |
+| --- | --- |
+| Node/edge | `IUT-N1 -> IUT-N2`, or a smaller named sub-edge |
+| Typed objects | Distinct source and target, theater/label, numerical copy, and exact scope of quantifiers |
+| Operation | Identity, specified isomorphism, correspondence, or reconstruction; explicit preservation law or `UNKNOWN` |
+| Numerical step | Quantity and sign, normalization, $j^2$ if applicable, and permitted indeterminacies |
+| Evidence | Author, work, edition, theorem/step, PDF page (or pinned code SHA, file, lines); separate what the author asserts from what was checked independently |
+| Test | A calculation, toy countermodel, alternative reading, or smallest premise whose proof would decide that edge |
+| Status | `STANDARD`, `ASSERTED_IN_IUT`, `DISPUTED`, `CONDITIONAL_FORMALIZATION`, or `UNVERIFIED`, **per claim or arrow** |
+
+Compare reports *by the maps they type and equations they justify*.
+Agreement on the location of Step (xi) is a result; agreement that it is
+valid requires an independent checked inference under the paper's
+hypotheses. A majority of agents is not a mathematical argument.
+Disagreements must name the first incompatible domain, codomain,
+allowed transport, or numerical estimate and what evidence would settle
+it. If the reports never reach a common typed claim, record that
+failure rather than inventing a consensus. A human expert must review
+any purported resolution before the status label changes.
+
+## External checkpoint before our agents' first pass
+
+This is the state reported by the published sources, **not a conclusion
+reached by the AI roles above**:
+
+| Checkable proposition | Evidence and present status |
+| --- | --- |
+| IUT III states Corollary 3.12 using Theorem 3.11 | [IUT III](sources.md): `ASSERTED_IN_IUT`; the Step-(xi) inference remains `DISPUTED`, not certified by publication |
+| The Scholze–Stix hexagon commutes with its proposed scalings | [Project LANA report, section 10.2 and 10.5, PDF pp. 47–49](https://github.com/katobungen/LANA_report_202607/blob/b8e4636edea64d0b9fdc1d7f6a51e63c1f5d1676/LANA_report_202607.pdf#page=47) confirms it does **not** commute, while disputing that the intended proof must factor through it; the latter claim needs a separate check |
+| The report's two maps agree for a suitable admissible $S$ | Same report, section 9.2, PDF p. 46, equation (9-1); section 10.5, PDF p. 49 explicitly reports **no proof** of that compatibility, so its mathematical status here is `UNVERIFIED` |
+| The displayed parametrized inequality matches $-Q\leq-T$ | [Elementary reduction](09-critical-mechanism.md) checks this if both texts use compatible real-number copies, the same normalization, and $Q>0$; IUT III explicitly invokes $Q>0$ in the proof on PDF p. 173, but the remaining compatibility is **not** established by the algebra |
+| Lean verifies IUT's Step (xi) | The [pinned code audit](06-lean-boundary.md) finds only a `CONDITIONAL_FORMALIZATION` from an unproved Corollary 3.12 **variant** to abc, not a proof of Step (xi) or of (9-1) |
+
+The report's authors also state that they have not reached complete
+agreement among themselves about whether the original paper contains a
+formalizable proof (section 10.5, PDF p. 49). This is a report about
+their investigation, **not** a vote on the truth of abc or a claim about
+every mathematician's opinion.
+
+## Trial 1: three independent readings of the same edge
+
+The A/B/C readings below checked primary PDF passages separately before
+receiving each other's findings. They did not reproduce all preceding IUT
+lemmas or obtain a human expert's agreement. [I1–I3 and
+D1–D3](sources.md) identify the exact editions; PDF page numbers in
+this table refer to those copies.
+
+| Role | Source-located object and operation | Independently checked | First remaining obligation |
+| --- | --- | --- | --- |
+| **A, proponent** | IUT III, Definition 3.8(ii), pp. 112–113: the $\Theta^{\times\mu}_{\mathrm{LGP}}$-link corresponds between pilots; Theorem 3.11(i), pp. 154–155, and Step (xi-b), pp. 181–182, additionally use a permutation-symmetry poly-isomorphism across representation columns. Remark 3.9.5 (Ob1)–(Ob3), (Ob6), pp. 131–135, describes a hull followed by $\det^{\otimes M}$, potentially increasing volume. | The raw link may be linear while the *hull-based* volume operation is not an invertible scalar map. Mochizuki's (LVEx) region/area formulas in his [2018 report, pp. 24–26](sources.md) were recomputed; they are an **analogy**, not Step (xi). | Check the cross-referenced lemmas behind the poly-isomorphism and the still-unread (Ob8)/(Ob9) apparatus. In Step (xi-f), p. 184, verify rather than assume the asserted membership of the **native** $q$-value in the output region. |
+| **B, critic** | Scholze–Stix, section 2.2, pp. 9–10: six diagram nodes (including an $\ell^\star$-member family), a $j^2$-scaled left arrow, and literal equality of the two arithmetic-degree lines at the bottom. The text first describes monodromy on the left, then in the whole loop. | For a loop made entirely of isomorphisms of ordered one-dimensional real vector spaces, each arrow is scalar, so the displayed $j^2$ produces a noncommuting loop for $j\ne1$. The $\sum j$ and $\sum j^2$ algebra in SS p. 4 checks. `(Lin)` and `id-version` are **Mochizuki's labels**, not terms used in the SS PDF. | Decide which of these diagram arrows represents the actual non-invertible hull/containment in IUT III, if any. A broken isomorphism loop by itself establishes neither the intended proof nor its failure. |
+| **C, definitions-only** | IUT I, Definition 3.1, p. 61: initial data are fixed; Corollary 3.7, pp. 88–89: distinct theaters have a prime-strip poly-isomorphism but not a distinguished ring/scheme identification. IUT III, Theorem 3.11(i), pp. 154–155: a **different** cross-column representation poly-isomorphism; part (ii), pp. 155–156: stated vertical log-Kummer compatibility for a specified component. | Corollary 3.12, pp. 173–174, treats the $\Theta$-pilot as subject to (Ind1)–(Ind3) but the $q$-pilot as not subject to them. Step (xi-d)–(xi-f), pp. 183–184, asserts a one-sided region membership; an identity of the two pilot objects or two log-volume functions does not follow simply from matching labels. | Type the interaction of the *pilot correspondence*, *cross-column poly-isomorphism*, and *native $q$-volume*. The cited vertical compatibility alone does not establish the horizontal comparison. |
+
+**First divergence, stated without a vote.** SS model each required
+comparison as an arrow in a loop of ordered real-line isomorphisms.
+The proponent reading instead invokes a prime-strip correspondence,
+a *different* representation transport, and a hull-to-line operation
+that yields a one-sided inclusion, not an invertible map. The neutral
+reading confirms that these are distinct source-named operations but
+does **not** establish that the last operation contains the *native*
+$q$-value. If SS's loop is mandatory for the actual operations, its
+$j^2$ incompatibility matters; if a genuinely different same-side
+route is licensed, the loop alone does not decide that route.
+Neither conditional has been discharged. Project LANA's separate,
+unproved two-map compatibility (9-1) gives a candidate test at this
+precise fork ([09](09-critical-mechanism.md)).
+
+**Reproducible corrections and checks.** In the hosted IUT III,
+Step (xi) has substeps (xi-a)–(xi-h) on PDF pp. 181–185, and
+Step (xii) follows on pp. 185–186; Step (xi) is *not* the final
+labeled step. SS's "page 16" citation agrees with the hosted
+Introduction's discussion of Corollary 3.12, although the boxed
+statement is on p. 173; their quoted closing sentence has the same
+inequality as hosted Step (xi-f), p. 184, but different prose.
+This does **not** demonstrate a substantive 2018-to-2020 revision.
+IUT III, p. 173, states $|\log(q)|>0$ when relating the two
+inequality forms. Finally, IUT I locates the "outside the framework
+of ring theory/scheme theory" passage on **PDF p. 61**, not p. 59.
+
+The arithmetic in each side's *toy calculation* is checkable,
+but not an adjudication: for $a=b=1$, Mochizuki's region/hull
+example has log-areas $\log 6<\log 8$, while SS's
+$\sum_{j=1}^{\ell^\star}j$ and
+$\sum_{j=1}^{\ell^\star}j^2$ equal
+$\ell^\star(\ell^\star+1)/2$ and
+$\ell^\star(\ell^\star+1)(2\ell^\star+1)/6$ respectively.
+The inference "therefore IUT's native $q$-value satisfies the bound"
+is **not** a consequence of either calculation.
+
+**Status after A/B/C:** the named IUT statements are `ASSERTED_IN_IUT`,
+the elementary area/sum/algebra checks are `STANDARD`, and the
+Step-(xi) cross-object inference and the relevance of SS's diagram
+remain `DISPUTED`. The report's map equality (9-1) is `UNVERIFIED`;
+the Lean result remains only a
+`CONDITIONAL_FORMALIZATION`. Agreement here is limited to a better
+specified question, not the answer.
+
+## Relation to the status of abc
+
+Keep three questions separate: whether abc is true; whether IUT I–IV
+establish it; and whether a pinned Lean development checks a *conditional*
+implication given an unproved substitute input. An elementary
+[algebraic equivalence](09-critical-mechanism.md) or a successful toy
+formalization answers neither of the first two questions. The trial
+should produce a precise question that independent experts can agree to
+test, even if they cannot yet agree on its answer.

@@ -13,12 +13,13 @@ and does not audit the Lean formalization effort in depth (see
 sits in a shared, actively-edited directory — §5.12, flag 7).
 
 **The precise contested inference.** Corollary 3.12 ("Log-volume Estimates
-for Θ-Pilot Objects," hosted-PDF pp.173–174 — pagination warning in §5.3) is
+for Θ-Pilot Objects," hosted-PDF pp.173–174 — citation note in §5.3) is
 derived from Theorem 3.11 ("the main theorem of the present series," p.153)
-through an eleven-step proof. The dispute concerns only the last step,
-**Step (xi)**, where an abstract comparison licensed by Theorem 3.11 becomes
-a numerical log-volume inequality. Scholze–Stix ("SS," SS report p.9) and
-Mochizuki (Cmt2018-08 pp.3–4) agree that Step (xi) turns on identifying
+through a proof labeled (i)–(xii). The dispute concerns the numerical
+inference in **Step (xi)** (pp. 181–185), not the final Step (xii), where
+the discussion continues with global Frobenioids (pp. 185–186).
+Scholze–Stix ("SS," SS report p.9) and Mochizuki (Cmt2018-08 pp.3–4)
+agree that Step (xi) turns on identifying
 several a priori distinct copies of the real numbers (arising from objects
 relative to different "arithmetic holomorphic structures" linked by the
 Θ-link), mediated by indeterminacies the paper calls (Ind1), (Ind2), (Ind3),
@@ -28,7 +29,7 @@ while tracking a scalar factor of $j^2$.
 
 | | Scholze–Stix | Mochizuki |
 | --- | --- | --- |
-| The Step (xi) map | Must effectively be linear for the diagram to stay consistent; keeping the $j^2$ scalar then forces an "empty inequality" | Non-linear once indeterminacies are respected; the linearity SS assume ("(Lin)," Mochizuki's own label) is "completely false" |
+| The Step (xi) map | Must effectively be linear for the diagram to stay consistent; keeping the $j^2$ scalar then forces an "empty inequality" | The raw $\Theta$-link can be linear; the *hull/indeterminacy-subject* volume comparison is not a scalar isomorphism. Mochizuki calls the generalized "(Lin)" premise "completely false"; "(Lin)" is his label |
 | Effect on Theorem 3.11 | Under SS's reading, Thm. 3.11 itself "does not become false, but trivial" | Under SS's reading, Thm. 3.11's multiradial algorithms no longer apply at all — inapplicable, not trivialized |
 | Overall verdict | "There is no proof"; not fixable by small modifications | Reflects "a fundamental misunderstanding" of what IUTch's objects are |
 
@@ -36,13 +37,17 @@ while tracking a scalar factor of $j^2$.
 - whether Mochizuki's "(Lin)" label fairly restates what SS's own diagram
   assumes, or recharacterizes it;
 - whether SS's quoted Step-(xi) conclusion and IUT III's own boxed
-  Corollary 3.12 are visibly the same inequality (§5.10, item 6) — not
-  resolved here;
+  Corollary 3.12 use the same normalized real quantities, as the
+  [conditional algebraic reduction](09-critical-mechanism.md) requires;
+- whether the two maps proposed in [Project LANA's report](09-critical-mechanism.md)
+  can be shown to agree for a suitable admissible $S$ (its equation
+  (9-1)); the report explicitly has no proof of this compatibility;
 - no public, dated SS reply specifically to Mochizuki's Sept. 2018
   Cmt2018-08 was located;
-- what, beyond pagination, changed in IUT III's text between the version SS
-  cite (Cor. 3.12 "at page 16") and the hosted 2020-05-18 PDF used
-  throughout this file (p.173).
+- whether SS's quoted Step-(xi) sentence appeared verbatim in an earlier
+  edition: its *inequality* appears on hosted PDF p. 184 but the
+  surrounding sentence differs; SS's separate p. 16 citation matches the
+  hosted Introduction's description of Corollary 3.12 (§5.3).
 
 Evidence labels follow [00-map.md](00-map.md): `STANDARD`,
 `ASSERTED_IN_IUT`, `DISPUTED`, `CONDITIONAL_FORMALIZATION`, `UNVERIFIED`.
@@ -76,6 +81,7 @@ research. PDF page is distinguished from printed page throughout (per
 | 14 | New Scientist, article 2522687 (LANA "stuck point," Topaz, Buzzard) | **2026-04-10** (print issue 2026-04-18) | newscientist.com/article/2522687 | **HTTP 200** (`CHECKED` earlier in this research) |
 | 15 | ZEN University / IUGC press releases on the IUT Innovator/Challenger Prizes | **2023-07-07** (prize creation); first award reported ≈ April 2024 | zen.ac.jp/news/0ul6zqed9-0; zen.ac.jp/news/d-5ye560_l | **HTTP 200** (`CHECKED`) |
 | 16 | LANA (`lana-agents/iut`) GitHub README | n/a | raw.githubusercontent.com/lana-agents/iut/... | **HTTP 200**. Full depth already audited in [06-lean-boundary.md](06-lean-boundary.md); used here only for the one-paragraph cross-reference in §5.9 |
+| 17 | Project LANA, *Interim Report on IUT Theory* | July 2026 (pinned PDF at `b8e4636`) | [Report PDF](https://github.com/katobungen/LANA_report_202607/blob/b8e4636edea64d0b9fdc1d7f6a51e63c1f5d1676/LANA_report_202607.pdf) and [ZEN University announcement](https://zen.ac.jp/news/zmcpostevent0717e) | **HTTP 200**. PDF pp. 40–43 and 45–49 read directly (`CHECKED`, 2026-10-05); the team's technical description and explicit unsolved compatibility (9-1) are summarized in [09](09-critical-mechanism.md) |
 
 No claim below relies on a source this research could not actually open. Where
 a source could not be opened (rows 1a, 1b, 1c), that fact is reported, not
@@ -109,19 +115,18 @@ repeated here.
 
 ## 5.3 What Theorem 3.11 and Corollary 3.12 assert, and the exact relation between them `ASSERTED_IN_IUT`
 
-**⚠ Pagination warning, read before using any page number below:** the
-Scholze–Stix report cites the corollary's statement at "**[IUTT-3, page 16,
-Corollary 3.12]**" (SS report, printed p.4). In the IUT III PDF as currently
-hosted (row 6, a file last updated 2020-05-18, i.e. roughly two years after
-SS wrote), Theorem 3.11 begins at **printed/PDF page 153** and Corollary
-3.12 at **printed/PDF page 173**. This is not an error in either document;
-it is direct, dated evidence that the hosted text of IUT III has been
-substantially revised (almost certainly lengthened, e.g. with new discussion
-and the "invisible indeterminacies" Figures 3.4–3.5 that now immediately
-precede Corollary 3.12) between whatever version SS read in 2018 and the
-version read for this file in 2026. **All page numbers below are to the
-2020-05-18 hosted PDF and are not stable identifiers across versions; the
-theorem/corollary numbers are the stable identifiers.**
+**Citation and edition note.** Scholze–Stix cite "[IUTT-3, page 16,
+Corollary 3.12]" (SS p. 4). Page 16 of the **currently hosted** IUT III
+contains the Introduction's description of Corollary 3.12 and its
+quantities; the *formal, boxed statement* is at PDF pp. 173–174. Thus
+their page-16 citation matches the current Introduction and **does not
+by itself show a version change**, contrary to an earlier reading of
+this file. SS also quote a Step-(xi) sentence (SS p. 9) whose numerical
+inequality agrees with the current Step (xi-f), PDF p. 184, but whose
+surrounding prose is not verbatim there. Whether this reflects a
+different revision or a paraphrase needs the exact 2018 text; it
+cannot be decided from the page-16 citation. Page numbers below refer
+to the currently hosted PDF listed in source row 6.
 
 **Theorem 3.11** ("Multiradial Algorithms via LGP-Monoids/Frobenioids,"
 IUT III p.153) is introduced by the paper's own text, one sentence before its
@@ -151,15 +156,15 @@ as an ingredient. Its headline conclusion, quoted exactly from the PDF
 
 **The exact relation between the two** (per IUT III's own proof structure,
 not a paraphrase): Corollary 3.12's proof is a named multi-step argument
-(Steps (i) through (xi), per the paper's own labels, spanning roughly
-pp.174–195 of the hosted PDF). The quantities "$-|\log(\Theta)|$" and
+(Steps (i) through (xii), per the paper's own labels, spanning
+pp. 174–186 of the hosted PDF). The quantities "$-|\log(\Theta)|$" and
 "$-|\log(q)|$" are **procession-normalized mono-analytic log-volumes** of
 specific regions ("holomorphic hulls" of pilot-object images) defined using
 Theorem 3.11's apparatus (p.173). The multiradial algorithm from Theorem 3.11
 is explicitly invoked again inside this proof — SS's own report cites this
 as "the multiradial algorithm [IUTT-3, Theorem 3.11]" being applied "so... it
 is argued in [IUTT-3, Corollary 3.12]" (SS report p.9) — and the disputed
-derivation step is specifically **Step (xi)**, the last step, where the
+derivation step is specifically **Step (xi)**, the disputed step, where the
 abstract multiradial comparison is converted into the numerical log-volume
 inequality above. Both SS and Mochizuki agree on this locus: SS's report
 says the issue arises "towards the end of Step (xi) in the proof of [IUTT-3,
@@ -502,7 +507,12 @@ reiterated the work "falls far short of giving a proof of ABC," while
 Mochizuki called Kirti Joshi's unrelated alternative work "mathematically
 meaningless" (row 13). In April 2026, LANA's lead Adam Topaz reported its
 formalization stuck at a point "closely related" to the SS objection (row
-14). Separately, Fesenko's own survey (cited in Rpt2018, p.42, not
+14). The team's July 2026 [interim report](09-critical-mechanism.md)
+(row 17) then proposed the concrete two-map compatibility (9-1) as a
+possible way to account for the disputed numerical comparison; it
+explicitly has **no proof** of that compatibility and reports no
+complete internal agreement on the original argument's proof status.
+Separately, Fesenko's own survey (cited in Rpt2018, p.42, not
 independently checked by this file) estimates IUTch has been "verified at
 least 30 times" (row 2).
 
@@ -531,7 +541,7 @@ reader would need to, at minimum:
    pp.153–159 in the hosted version), and write down the precise scope of
    each of **(Ind1), (Ind2), (Ind3)** — what group, or what range of
    choices, each permits — not just their names.
-3. Read **Corollary 3.12**'s full proof, Steps (i)–(xi) (pp.174–195 in the
+3. Read **Corollary 3.12**'s full proof, Steps (i)–(xii) (pp. 174–186 in the
    hosted version), and independently identify every point at which a
    "copy of $\mathbb{R}$" (in SS's language) or an "arithmetic holomorphic
    structure" (in Mochizuki's) is introduced, and what map/isomorphism is
@@ -549,21 +559,20 @@ reader would need to, at minimum:
    SS say consistency requires, actually yields the "empty inequality" they
    describe, by the reader's own calculation rather than by trusting either
    side's characterization of the result.
-6. Independently reconcile SS's quoted intermediate conclusion from Step
-   (xi), "$-|\log(q)|\le -|\log(\Theta)|\in\mathbb{R}$" (SS report p.9), with
-   the final boxed statement of Corollary 3.12 as printed, "$C_\Theta\ge-1$
-   for any $C_\Theta\in\mathbb{R}$ such that
-   $-|\log(\Theta)|\le C_\Theta\cdot|\log(q)|$" (IUT III p.174) — these are
-   not obviously the same inequality on their face (one is a single fixed
-   relation, the other parametrized by a free constant $C_\Theta$), and
-   this file did not itself re-derive how one yields the other; doing so is
-   a concrete, well-posed task for a reader, not resolved here.
-7. Obtain, if possible, the actual 2018 version of IUT III that SS cite as
-   having Corollary 3.12 "at page 16" (not available to this research —
-   see §5.12), and check whether the mathematical content of Theorem
-   3.11/Corollary 3.12 changed between that version and the 2020-05-18
-   version read for this file, or whether only surrounding
-   discussion/numbering changed.
+6. Reconcile SS's quoted intermediate conclusion from Step (xi),
+   $-|\log(q)|\le-|\log(\Theta)|$ (SS report p.9), with the parametrized
+   statement of Corollary 3.12 (IUT III p.174). The
+   [elementary reduction in 09](09-critical-mechanism.md) shows their
+   **algebraic** equivalence if both use the same normalized real
+   quantities $T=|\log(\Theta)|$ and $Q=|\log(q)|$ and $Q>0$. What remains
+   open is confirming that the *two texts' numerical copies* and
+   normalizations match and that Step (xi)'s comparison is legitimate.
+   IUT III's own proof, p. 173, explicitly states $|\log(q)|>0$.
+7. Obtain, if possible, the exact 2018 IUT III text quoted by SS
+   in their Step-(xi) discussion (SS p. 9) and compare its wording with
+   hosted Step (xi-f), p. 184. Their separate p. 16 citation matches
+   the hosted Introduction and alone supplies **no** evidence of a
+   substantive revision (§5.3 and §5.12).
 8. Only after 1–7, read §5.4 and §5.5 above again and check which, if
    either, side's characterization matches what was found.
 
@@ -592,9 +601,11 @@ These are stated as questions, not rhetorical ones with an implied answer:
    replies) — i.e., **no public, dated SS rebuttal of Mochizuki's Sept. 2018
    Cmt2018-08 was located by this research.** If one exists, it would bear
    directly on this file's open questions and was not found.
-4. What, precisely, changed in IUT III's text (not just pagination) between
-   whatever version SS examined (page 16 for Cor. 3.12) and the
-   2020-05-18 hosted version (page 173)? Not established here (§5.12).
+4. Does SS's quoted Step-(xi) sentence (SS p. 9) occur verbatim in the
+   edition available in 2018, and did the mathematical content change?
+   The current (xi-f), p. 184, has the same inequality but different
+   prose. SS's p. 16 citation fits the hosted Introduction (§5.3);
+   neither fact alone establishes a change in mathematical content.
 5. Does either side's account change if the "indeterminacies" (Ind1)-(Ind3)
    are given a fully explicit, independent (non-IUT) group-theoretic or
    measure-theoretic description, rather than only a name and a citation to
@@ -605,26 +616,30 @@ These are stated as questions, not rhetorical ones with an implied answer:
    and (Lin) framing, only later, general restatements of their original
    2018 position (e.g. Scholze's 2024 remark, row 13) that do not engage
    the (Lin)/"id-version" labels by name.
-7. LANA's team reports getting "stuck" at a point "closely related" to the
-   SS-identified area (row 14) — related in what precise technical sense,
-   and is it the same Step (xi) operation, a different step with similar
-   structure, or something upstream of both? This file did not find a
-   public, technical (as opposed to journalistic) description of LANA's
-   specific obstruction; [06-lean-boundary.md](06-lean-boundary.md) is the
-   place to check for any further detail on this specific question.
+7. Project LANA's July 2026 [interim report](09-critical-mechanism.md)
+   **does** now provide a public technical formulation: section 9.2,
+   PDF p. 46, asks for a suitable $S$ making its two maps
+   $\eta_q$ and $\eta^{\mathrm{anab}}_S$ agree; section 10.5, p. 49,
+   says the team has no proof. The report accepts that the SS hexagon
+   does not commute, but argues that the intended same-side comparison
+   might avoid that hexagon (pp. 47–49). The open task is to show from
+   IUT III whether the claimed Step-(xi) transport yields this *specific*
+   compatibility, and whether the SS hexagon is actually unavoidable.
+   This replaces this file's earlier assertion that no public technical
+   description had been found; it does **not** settle either objection.
 
 ---
 
 ## 5.12 Explicit flags (do not silently resolve any of these)
 
-1. **Pagination/version instability.** SS's report cites Corollary 3.12 at
-   "page 16" of IUT III; the hosted PDF used throughout this file (dated
-   2020-05-18 on Mochizuki's own publications list, i.e. about two years
-   after SS wrote) has it at page 173. The theorem/corollary numbers appear
-   stable; raw page numbers are not. This file cites by theorem/corollary
-   number first, hosted-PDF page number second, and flags this gap
-   explicitly rather than assuming the two versions are textually identical
-   apart from pagination.
+1. **Edition comparison still open, but no demonstrated page-16
+   mismatch.** SS's "page 16" agrees with the hosted PDF's Introduction,
+   which already describes Corollary 3.12; the formal statement is on
+   p. 173 (§5.3). SS's quoted closing Step-(xi) sentence has the same
+   inequality as hosted (xi-f), p. 184, but not its surrounding wording.
+   This file cites named results plus hosted-PDF pages without assuming
+   that the earlier edition was textually identical or substantively
+   different.
 2. **Dating ambiguity on the SS report itself.** The publicly-readable Bonn
    copy is self-dated "July 16, 2018" on its own title page; Mochizuki's
    hub page and his own Cmt2018-08 both call the same document the "August
@@ -666,8 +681,9 @@ These are stated as questions, not rhetorical ones with an implied answer:
    verbatim, to keep this file's opening section brief. None of this
    file's own factual claims about LANA depend on that sibling file's
    content regardless:
-   every LANA-related claim here cites the New Scientist article (row 14) or
-   the LANA GitHub README (row 16) directly. Given the demonstrated
+   the LANA-related claims here cite the New Scientist article (row 14),
+   the LANA GitHub README (row 16), or the pinned July 2026 report
+   (row 17) directly. Given the demonstrated
    volatility, a reader opening this guide later should still treat every
    cross-reference link above as liable to have moved again since this
    paragraph was written, and should not assume the sibling files' exact

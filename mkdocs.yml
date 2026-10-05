@@ -30,6 +30,8 @@ nav:
       - Lean vocabulary: guide/06b-lean-vocabulary.md
       - Working dictionary: guide/07-dictionary.md
       - Research queue: guide/08-work-queue.md
+      - Critical mechanism: guide/09-critical-mechanism.md
+      - Adversarial trial: guide/09a-adversarial-trial.md
       - Source register: guide/sources.md
 markdown_extensions:
   - toc

@@ -17,23 +17,26 @@ results must meet the shared evidence rules in [00](00-map.md).
 | 6 — IUT III | [03](03-iut-route.md), [05](05-critical-transition.md): Theorem 3.11, Corollary 3.12, Step (xi) | Stages 4–5; primary IUT III | Independent expert can check each comparison or point to the exact gap |
 | 7 — dispute | [05](05-critical-transition.md): Scholze–Stix objection and Mochizuki's answer | Stage 6; both sides' primary texts | Each disputed arrow has both interpretations and a testable obligation |
 | 8 — IUT IV and Lean | [04](04-claim-dependencies.md), [06](06-lean-boundary.md), [06a](06a-lean-dependencies.md): downstream claims and conditional Lean assumptions | Stages 0–1; IUT IV; pinned Lean snapshot | Trace a formal declaration to abc without assuming its unproved input |
-| 9 — adversarial review | Independent explainer, critic, and formalizer test one arrow | Stages 6–8 | Record a concrete correction, missing premise, or reviewed proof, not a vote |
+| 9 — adversarial review | [09](09-critical-mechanism.md) and [09a](09a-adversarial-trial.md): type/identity ledger, numerical reduction, and independent source readings of one edge | First-pass locators from stages 6–8; checked [Project LANA report](sources.md) | Type the proposed compatibility (9-1) and its connection, if any, to Step (xi); record a concrete correction, missing premise, or reviewed proof with its exact source. Agreement or a vote is not a proof |
 | 10 — exposition | Connected reader guide and diagrams from checked edges | Stages 0–9 | Each explanation links back to the exact node, arrow, source, and remaining gaps |
 
 ## Next bounded investigations
 
 1. Check the **full hypotheses and quantified objects** in IUT III
    Theorem 3.11, Corollary 3.12, and especially Step (xi) against the
-   first-pass [claim ledger](04-claim-dependencies.md). An independent
-   expert must validate the comparison domains and indeterminacies.
+   first-pass [claim ledger](04-claim-dependencies.md). Compare each
+   transport with Project LANA's proposed two-map compatibility
+   (9-1); an independent expert must validate the actual domains,
+   admissible choices, and indeterminacies.
 2. Reconstruct IUT IV Propositions 1.1–1.8 and the separate
    `[GenEll]` Theorem 2.1(i) input behind Corollaries 2.2–2.3.
    Record which inequalities are for heights, conductors, or log-volumes,
    and the exact rule converting one to another.
 3. Compare the pinned [Lean theorem types](06a-lean-dependencies.md) with
-   the published Corollary 3.12. Supply and review the missing premise;
-   audit external dependency sources instead of counting a successful
-   conditional build as a proof of that premise.
+   the published Corollary 3.12 **and separately** with the report's
+   compatibility (9-1). Supply and review each missing premise; audit
+   external dependency sources instead of counting a successful
+   conditional build as a proof of either premise.
 4. Give the disagreement to two human experts in its strongest source-linked
    formulations; ask each to identify the first arrow they would accept or
    reject. Do not turn differing verdicts into an invented consensus.
@@ -45,6 +48,21 @@ PDF page numbers and printed page numbers can differ; record which is used.
 Prioritize **stage 6**, then **stages 7 and 8**, before producing a polished
 "IUT in 20 diagrams." A diagram is a deliverable only after its edges can be
 audited.
+
+**Phase II checkpoint (2026-10-05):** [09](09-critical-mechanism.md)
+isolates a checkable algebraic consequence of the *stated* Corollary 3.12
+inequality under an explicit positivity and normalization assumption, and
+uses a two-copy model to expose an identification/quantifier hazard.
+[09a](09a-adversarial-trial.md) specifies the evidence contract and
+records the first independent proponent, critic, and definitions-only
+readings. They distinguish the critics' real-line-isomorphism loop
+from the proposed hull/containment route, without establishing the
+necessary compatibility with the *native* $q$-value. Project LANA's
+checked [interim report](sources.md) proposes the two-map test (9-1)
+but states explicitly that it has no proof of this equality. The
+dependent formalizer's type-level trial remains to be recorded.
+These are tools for locating the missing justification, not a
+verification of IUT III or a resolution of abc.
 
 **Stages 1 and 4–6 checkpoint (2026-10-05):** The [paper-side
 route](03-iut-route.md) and [15-node graph](04-claim-dependencies.md)

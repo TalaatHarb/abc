@@ -59,7 +59,7 @@ for that layer).
 | `IUT-B4` | log-link: vertical lattice direction, via the $p$-adic logarithm on local units | `ASSERTED_IN_IUT` | IUT III, Prop. 1.2 p. 30 / Prop. 1.3 p. 41 | `IUT-B2` |
 | `IUT-B5` | Reconstruction algorithm $\Psi_{\mathrm{cns}}$ (mono-anabelian style), well-defined up to ${}^{\ddagger}\Pi_v$-conjugacy | `ASSERTED_IN_IUT` | IUT II, Cor. 4.6, p. 137 | `IUT-B2` |
 | `IUT-N1` | Theorem 3.11: multiradial representation of the LGP-monoid/Frobenioid data, up to (Ind1)/(Ind2)/(Ind3) | `ASSERTED_IN_IUT` | IUT III, Thm. 3.11, p. 153 (= Intro "Theorem A", p. 19) | `IUT-B1…B5`, Def. 3.8 p. 112 |
-| `IUT-N2` | Corollary 3.12: log-volume estimate $C_{\Theta} \geq -1$ for $\Theta$-pilot vs. $q$-pilot objects | `ASSERTED_IN_IUT`; proof's Step (xi), pp. 181–183, is `DISPUTED` | IUT III, Cor. 3.12, p. 173 (= Intro "Theorem B", pp. 21–22) | `IUT-N1` |
+| `IUT-N2` | Corollary 3.12: log-volume estimate $C_{\Theta} \geq -1$ for $\Theta$-pilot vs. $q$-pilot objects | `ASSERTED_IN_IUT`; proof's Step (xi), pp. 181–185, is `DISPUTED` | IUT III, Cor. 3.12, p. 173 (= Intro "Theorem B", pp. 21–22) | `IUT-N1` |
 | `IUT-N3` | Theorem 1.10: Corollary 3.12 specialized to one $E_F$ with explicit constants, under extra hypotheses (good reduction outside $2\ell$; 2/3/5-torsion rationality) | `ASSERTED_IN_IUT` | IUT IV, Thm. 1.10, p. 22 | `IUT-N2` (+ extra hypotheses, not part of `IUT-N2`) |
 | `IUT-N4` | Corollary 2.2: suitable initial $\Theta$-data exist for every point of bounded degree in a compact $K_V$, outside a finite exceptional set $\mathrm{Exc}_d$ | `ASSERTED_IN_IUT` | IUT IV, Cor. 2.2, p. 41 | `IUT-N3`, `IUT-G1` |
 | `IUT-N5` | Corollary 2.3: Diophantine inequality $\mathrm{ht}_{\omega_X(D)} \lesssim (1+\varepsilon)(\mathrm{log\text{-}diff}+\mathrm{log\text{-}cond})$ for arbitrary hyperbolic $U_X$; "coincides precisely" with `[GenEll]` Thm. 2.1(i) | `ASSERTED_IN_IUT` | IUT IV, Cor. 2.3, p. 54 (= Intro "Theorem A", p. 3) | `IUT-N4`, `IUT-G1` |
@@ -67,7 +67,7 @@ for that layer).
 | `IUT-G1` | `[GenEll]` Thm. 2.1: height/general-position results for elliptic curves, used by both `IUT-N4` and `IUT-N5` | `STANDARD` (qualified — see §1) | S. Mochizuki, *Arithmetic Elliptic Curves in General Position*, Math. J. Okayama Univ. 52 (2010), pp. 1–28 | — (pre-dates IUT I–IV; not itself part of the 2018 dispute) |
 | `IUT-F1` | LANA Lean repository: formal theorems of the shape "`Corollary312Input` (explicit unproved hypothesis, including $-1 \leq C_{\Theta}$) ⟹ [ABC-shaped conclusion]" | `CONDITIONAL_FORMALIZATION` | `lana-agents/iut`, `README.md` and `Plans/Iut4Sec1Spec.md` (fetched 2026; see §7 for URLs) | Assumes, but does **not** derive, a stand-in for `IUT-N2`; see §5 |
 | `IUT-F2` | Mochizuki/RIMS "Formalization of IUT" slide deck: skeletal Lean material targeting an informally-labeled step "3.11.5 ⟹ 3.12" | `UNVERIFIED` (read in full; self-described as a communication aid, not a verification — see §5) | `Formalization of IUT (2026-04).pdf`, kurims homepage (URL §7) | Related informally to `IUT-N1`→`IUT-N2`; not a checked derivation of either |
-| `IUT-U1` | `katobungen/LANA_report_202607`: secondary report referencing LANA | `UNVERIFIED` | `github.com/katobungen/LANA_report_202607` | Not independently read beyond a LaTeX preamble; content not relied on anywhere in this guide |
+| `IUT-U1` | Project LANA's proposed compatibility: for a suitable admissible $S$, the native $q$-pilot map $\eta_q$ equals the reconstructed map $\eta^{\mathrm{anab}}_S$ | `UNVERIFIED` **compatibility**; the report itself was read directly | [Interim report](https://github.com/katobungen/LANA_report_202607/blob/b8e4636edea64d0b9fdc1d7f6a51e63c1f5d1676/LANA_report_202607.pdf), §9.2, PDF p. 46, equation (9-1); authors explicitly report no proof in §10.5, p. 49 | Candidate link in the `IUT-N1`→`IUT-N2` dispute, **not** a consequence established by `IUT-F1`; see [09](09-critical-mechanism.md) |
 
 ---
 
@@ -83,10 +83,11 @@ was independently checked against the primary texts during this research
 pass and does not depend on that other file.
 
 **The claim in dispute.** Corollary 3.12's proof (IUT III, pp. 173–186)
-compares, in Step (xi) (pp. 181–183), the multiradial representation
+compares, in Step (xi) (pp. 181–185), the multiradial representation
 constructed in Theorem 3.11 for one column of the log-theta-lattice against
-the $q$-pilot object's representation in an adjacent column, via a gluing
-isomorphism across the $\Theta$-link, and upgrades this to a log-volume inequality.
+the $q$-pilot object's representation in an adjacent column, via what Step (xi-a)
+calls "a sort of gluing isomorphism" across the $\Theta$-link, and
+asserts a log-volume inequality.
 
 **Scholze–Stix's objection** (S. Scholze and J. Stix, *Why abc is still a
 conjecture*, 2018; §2.2, "Proof of [IUTT-3, Corollary 3.12]", pp. 9–10 of
@@ -124,7 +125,7 @@ sources checked (through 2024–2025 status reports from Mochizuki's own
 page); the matter is recorded as `DISPUTED` for exactly that reason, on
 `IUT-N2`'s proof specifically, not on IUT III/IV as a whole. A reader who
 wants to form their own view should read §2.2 of the Scholze–Stix essay and
-pp. 181–183 of IUT III side by side (reading exercise 2 in
+pp. 181–185 of IUT III side by side (reading exercise 2 in
 `03-iut-route.md` §10), not rely on either side's summary of the other.
 
 ---
@@ -141,10 +142,12 @@ paper's Introduction is meant.
 
 ---
 
-## 5. Formalization detail: two distinct 2026 Lean efforts, not to be conflated
+## 5. Two distinct Lean efforts and a separate interim report
 
 Two separate, independent 2026 Lean-related efforts exist. Conflating them
-would misstate both.
+would misstate both. Project LANA's interim report is a further, distinct
+source: reading its mathematical proposal does not imply that the Lean
+repository verifies the proposal.
 
 ### 5.1 `IUT-F1` — the LANA project (`lana-agents/iut`), `CONDITIONAL_FORMALIZATION`
 
@@ -205,12 +208,19 @@ not found stated elsewhere in the sources checked during this research pass
 and is flagged here explicitly so the two are not merged in later
 exposition.
 
-### 5.3 `IUT-U1` — a secondary report, not relied upon
+### 5.3 `IUT-U1` — a checked report, with an unproved compatibility
 
-`katobungen/LANA_report_202607` was located but only its LaTeX preamble
-could be retrieved during this research pass; its substantive content is
-unread and nothing in this guide depends on it. Listed for completeness and
-so a future pass knows it was seen but not used.
+The July 2026 [Project LANA interim report](https://github.com/katobungen/LANA_report_202607/blob/b8e4636edea64d0b9fdc1d7f6a51e63c1f5d1676/LANA_report_202607.pdf)
+is now available and was checked directly at the pinned PDF revision in
+§7. In §9.2, PDF p. 46, it proposes finding a suitable $S$ such that
+$\eta_q=\eta^{\mathrm{anab}}_S$ (its equation (9-1)); in §10.5, p. 49,
+the authors state that they have **no proof** of this equality and have
+not reached complete agreement on the original IUT argument's proof
+status. The report's diagnosis is neither a proof of the equality nor a
+formalization of it by the distinct, pinned Lean project (`IUT-F1`).
+See [09-critical-mechanism.md](09-critical-mechanism.md) for the maps'
+provisional types, why the equality would matter, and its remaining
+obligations.
 
 ---
 
@@ -303,9 +313,10 @@ LANA Lean repository (`IUT-F1`):
 - `https://raw.githubusercontent.com/lana-agents/iut/main/README.md`
 - `https://raw.githubusercontent.com/lana-agents/iut/main/Plans/Iut4Sec1Spec.md`
 
-Secondary, unread beyond preamble (`IUT-U1`):
+Project LANA's independently checked interim report (`IUT-U1`, source
+register [D4](sources.md); PDF sections 8.2–8.3, 9.2, and 10.2–10.5):
 
-- `https://github.com/katobungen/LANA_report_202607`
+- `https://github.com/katobungen/LANA_report_202607/blob/b8e4636edea64d0b9fdc1d7f6a51e63c1f5d1676/LANA_report_202607.pdf`
 
 ---
 

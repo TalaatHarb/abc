@@ -15,7 +15,9 @@ route is [02](02-prerequisites.md); questions 2–3 have a
 [claim graph](04-claim-dependencies.md), while question 4 has a
 [source-paired dispute guide](05-critical-transition.md). The
 [Lean audit](06-lean-boundary.md) supplies a *conditional* comparison.
-Work still required to verify the arrows is tracked in
+The [critical-mechanism audit](09-critical-mechanism.md) and
+[adversarial trial](09a-adversarial-trial.md) test one disputed arrow rather
+than adding more unverified arrows. Work still required is tracked in
 [08](08-work-queue.md).
 
 ## Two directions of travel

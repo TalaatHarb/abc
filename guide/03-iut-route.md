@@ -51,7 +51,7 @@ auxiliary sign/root-of-unity datum $\varepsilon$ (IUT I, **Definition 3.1**, p. 
 `IUT-B2`), as a collection of data $(\{{}^{\dagger}F_v\}_{v \in V},\ {}^{\dagger}F^{\Vdash}_{\mathrm{mod}})$ satisfying
 listed compatibility conditions. Mochizuki describes each theater, in brief,
 as a kind of "miniature model" of ordinary scheme-theoretic arithmetic
-geometry built around the theta function (IUT I, p. 59, paraphrased here;
+geometry built around the theta function (IUT I, p. 61, paraphrased here;
 only the two-word phrase is quoted). Informally: one self-consistent,
 internally ordinary copy of arithmetic geometry, built around one elliptic
 curve.
@@ -62,7 +62,7 @@ Two kinds of arrow connect theaters, and they behave very differently:
 
 - The **$\Theta$-link**, IUT I, **Corollary 3.7(i)** (p. 88; `IUT-B3`), is
   explicitly **not** a morphism of schemes or rings — IUT I states that it
-  "lies outside the framework of ring theory/scheme theory" (p. 59). It is a
+  "lies outside the framework of ring theory/scheme theory" (p. 61). It is a
   Frobenioid-theoretic correspondence identifying a $\Theta$-pilot object in one
   theater with a $q$-pilot object in the next. Chained copies, indexed by
   $n \in \mathbb{Z}$, give the log-theta-lattice's horizontal direction; the
@@ -105,7 +105,7 @@ analogy with ordinary scheme theory.
 | Term | Purpose | Permitted comparison (or explicit unknown) | Primary reference |
 | --- | --- | --- | --- |
 | **$\Theta$-Hodge theater** | Self-contained "miniature model" of ordinary scheme-theoretic arithmetic geometry, built around one elliptic curve $E_F$; the basic unit linked/compared across the lattice. | Not compared to another theater as rings/schemes directly; only its **reconstructed** Galois-theoretic data (via §1.3) may be compared across a link. | IUT I, **Def. 3.6**, p. 87 (`IUT-B2`) |
-| **$\Theta$-link** | The log-theta-lattice's horizontal arrow: identifies a $\Theta$-pilot object in one theater with a $q$-pilot object in the next, via Hodge–Arakelov-theoretic evaluation (constructed in IUT II). | Explicitly **not** a ring/scheme morphism — IUT I states it "lies outside the framework of ring theory/scheme theory" (p. 59); only the one named Frobenioid-theoretic correspondence is licensed. | IUT I, **Cor. 3.7(i)**, p. 88 (`IUT-B3`) |
+| **$\Theta$-link** | The log-theta-lattice's horizontal arrow: identifies a $\Theta$-pilot object in one theater with a $q$-pilot object in the next, via Hodge–Arakelov-theoretic evaluation (constructed in IUT II). | Explicitly **not** a ring/scheme morphism — IUT I states it "lies outside the framework of ring theory/scheme theory" (p. 61); only the one named Frobenioid-theoretic correspondence is licensed. | IUT I, **Cor. 3.7(i)**, p. 88 (`IUT-B3`) |
 | **log-link** | The lattice's vertical arrow: applies the $p$-adic logarithm to local units, passing from a Frobenius-like monoid to its "log" (additive) image. | At the level of elements, explicitly **not** compatible with the Kummer isomorphisms used elsewhere in the construction (IUT III, p. 26, paraphrased) — this stated incompatibility is exactly why log-shells (next row), not raw log-links, carry the comparison. | Constructed in IUT III, **Def. 1.1** (pp. 23–29); key compatibility properties in **Prop. 1.2**, p. 30 / **Prop. 1.3**, p. 41 (`IUT-B4`) |
 | **log-shell** | A canonically-constructed compact ("bounded") topological module $I_{{}^{\dagger}F_v} \subseteq \Psi^{\sim}_{{}^{\dagger}F_v}$ attached to each valuation, serving — in the source's own words — as a "multiradial container" (IUT III, p. 115, paraphrased) on which log-volumes are measured. | Log-volumes **on log-shells and their tensor packets** are the specific licensed comparison device: IUT III's own Introduction states this "will play a crucial role in deriving the explicit estimates…obtained in Corollary 3.12" (p. 15, paraphrased apart from the quoted clause). Tensor-packet Kummer isomorphisms varying over $m \in \mathbb{Z}$ are subject to the **(Ind3)** indeterminacy specifically. **Unverified by this guide**: the deeper justification of log-shells' defining properties rests on Mochizuki's earlier paper "Topics in Absolute Anabelian Geometry III" (`[AbsTopIII]`), which is **not** in this guide's checked corpus and was **not** independently read here. | Defined (as "pre-log-shell" → "log-shell") in IUT III, **Def. 1.1**, p. 24; previewed in general form in IUT II, **Example 1.8(ix)**, p. 41 (itself citing `[AbsTopIII]`, Prop. 5.8(ii), unverified) |
 | **log-theta-lattice** | The full two-dimensional, non-commutative diagram/grid of $\Theta$-Hodge theaters: $\Theta$-links as horizontal arrows, log-links as vertical arrows — the structure underlying Theorem 3.11 and Corollary 3.12. | Non-commutativity is explicit and intentional (stated as "the point of the construction" by this guide's §1.2, paraphrasing IUT III); nothing beyond the stated horizontal/vertical arrow structure is asserted to commute. | IUT III's own title and abstract, **p. 1** ("…Canonical Splittings of the Log-Theta-Lattice…") |
@@ -137,7 +137,7 @@ p. 173; `IUT-N2`; restated as "**Theorem B**" in the Introduction, pp.
 procession-normalized mono-analytic log-volumes of a $\Theta$-pilot and a $q$-pilot
 object, an inequality of the shape $-\lvert\log(\Theta)\rvert \geq -\lvert\log(q)\rvert$, i.e. $C_{\Theta} \geq -1$
 for any real $C_{\Theta}$ with $-\lvert\log(\Theta)\rvert \leq C_{\Theta}\cdot\lvert\log(q)\rvert$. The proof runs pp.
-173–186 in labeled steps (i)–(xi). **Step (xi)** (pp. 181–183) is where the
+173–186 in labeled steps (i)–(xii). **Step (xi)** (pp. 181–185) is where the
 multiradial algorithm's output — built relative to one arithmetic
 holomorphic structure, i.e. one column of the lattice — is compared, via a
 gluing isomorphism across the $\Theta$-link, against the adjacent column's
@@ -269,7 +269,7 @@ settled.
                                              representation + (Ind1)(Ind2)(Ind3)
                                              (IUT III, p.153)
                                                                |
-                                    DISPUTED: Step (xi), pp.181-183 (see sec.7, sec.4 of 04)
+                                    DISPUTED: Step (xi), pp.181-185 (see sec.7, sec.4 of 04)
                                                                v
                                              [IUT-N2] Corollary 3.12 -- C_Theta >= -1
                                              (IUT III, p.173)
