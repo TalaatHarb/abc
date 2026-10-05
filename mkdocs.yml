@@ -1,0 +1,46 @@
+site_name: ABC conjecture research guide
+site_description: A source-linked, auditable reading path through the contested IUT claim
+site_url: https://abc.talaatharb.net/
+docs_dir: docs
+site_dir: site
+hooks:
+  - site_hooks.py
+watch:
+  - README.md
+  - Research-project-plan.md
+  - guide
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.top
+nav:
+  - Home: index.md
+  - Original research plan: Research-project-plan.md
+  - Reading guide:
+      - Project map: guide/00-map.md
+      - The abc target: guide/01-abc-target.md
+      - Prerequisites: guide/02-prerequisites.md
+      - Polynomial abc lab: guide/02a-polynomial-abc.md
+      - IUT source route: guide/03-iut-route.md
+      - Claim dependencies: guide/04-claim-dependencies.md
+      - The disputed step: guide/05-critical-transition.md
+      - Lean boundary: guide/06-lean-boundary.md
+      - Lean dependency ledger: guide/06a-lean-dependencies.md
+      - Lean vocabulary: guide/06b-lean-vocabulary.md
+      - Working dictionary: guide/07-dictionary.md
+      - Research queue: guide/08-work-queue.md
+      - Source register: guide/sources.md
+markdown_extensions:
+  - toc
+  - tables
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3.2.2/es5/tex-mml-chtml.js

@@ -1,0 +1,6 @@
+/site/
+/.venv/
+/docs/index.md
+/docs/Research-project-plan.md
+/docs/guide/
+__pycache__/

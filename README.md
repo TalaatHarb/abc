@@ -53,3 +53,45 @@ The goal is a sequence of explanations that a mathematician can challenge at
 a specific arrow, not a simplified story that hides the arrow. Text here is
 original commentary and links to the source material, not a copy of the
 papers. Snapshot of this reading path: **2026-10-05**.
+
+## Reading site
+
+The site renders the Markdown with [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/),
+MathJax for equations, and Mermaid for claim diagrams. For a local preview
+with Python 3.11 or later:
+
+```sh
+python -m pip install -r requirements-docs.txt
+python -m mkdocs serve
+```
+
+Open <http://127.0.0.1:8000/>. Edits to the README, plan, or guide are
+reflected in the preview. MathJax is loaded from unpkg.com in the browser;
+Material also loads Mermaid from that CDN, so the browser must be able to
+reach it to render equations and diagrams. To build a static copy, run
+`python -m mkdocs build --strict`. Only the README, original plan, guide
+Markdown, and site JavaScript are staged for publication. `_sources` is
+excluded from the Docker build context, and infrastructure files are not
+served by the final image.
+
+To serve the production image locally (with a running Docker daemon):
+
+```sh
+docker build -t abc-guide .
+docker run --rm -p 8080:8080 abc-guide
+```
+
+The workflow in `.github/workflows/publish-image.yml` publishes
+`ghcr.io/talaatharb/abc:latest` and a commit-SHA tag on pushes to `master`,
+including PR merges. On first publication, set the GHCR package's
+**visibility to public** in its package settings; repository access does not
+automatically make the image public. The workflow publishes an image but
+does not deploy it.
+
+The Kubernetes manifests in `k8s` require an nginx ingress controller,
+cert-manager with a `letsencrypt-prod` ClusterIssuer, and DNS for
+`abc.talaatharb.net` pointing to the ingress. After the public image is
+available, run `kubectl apply -f k8s` to create the Deployment, Service,
+and TLS Ingress. After later image publishes, run
+`kubectl rollout restart deployment/abc-docs` to pull the new `latest` tag;
+publishing alone does not restart existing pods.

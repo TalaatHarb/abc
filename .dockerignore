@@ -1,0 +1,12 @@
+**
+!Dockerfile
+!README.md
+!Research-project-plan.md
+!requirements-docs.txt
+!mkdocs.yml
+!site_hooks.py
+!guide/
+!guide/*.md
+!docs/
+!docs/javascripts/
+!docs/javascripts/mathjax.js

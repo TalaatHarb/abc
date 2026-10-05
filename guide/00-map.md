@@ -35,6 +35,20 @@ linking theorem numbers does not tell us whether a theorem's hypotheses are
 met, whether two copies of an object are being compared by a legitimate map,
 or whether the claimed inequalities have the stated quantifiers.
 
+The following *selected claim dependencies* are drawn from
+[the claim ledger](04-claim-dependencies.md). Dashed arrows denote
+dependencies to audit, **not proven implications**; the Theorem 3.11 to
+Corollary 3.12 arrow contains the disputed Step (xi).
+
+```mermaid
+flowchart TB
+  B["IUT I/II constructions"] -. "inputs" .-> T["IUT III: Theorem 3.11"]
+  T -. "Step (xi) disputed" .-> C["IUT III: Corollary 3.12"]
+  C -. "extra hypotheses" .-> IV["IUT IV: downstream inequalities"]
+  G["[GenEll]: additional input"] -. "independent dependency" .-> IV
+  IV -. "classical reduction" .-> A["abc claim"]
+```
+
 Keep three branches distinct:
 
 | Branch | What to trace | What cannot be inferred |
