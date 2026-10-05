@@ -371,7 +371,8 @@ secondary commentary recorded in §5.9 and flagged again in §5.12.
 > **not** generalize to arbitrary regions and constants. Source: Rpt2018
 > (row 2), item **(LVEx)**, pp.24–26 (preceded by (LbLV), p.23, and (MlLV),
 > p.24). All arithmetic below was independently recomputed for this file by
-> direct area calculation and reproduced to match the source exactly.
+> direct area calculation; the parameter experiment below is our own
+> calculation on the illustrative model, not a claim in the source.
 
 **The construction, exactly as given.** Let $V=\mathbb{R}^2$ and let
 $\sigma: V\to V$ be $\sigma(x,y)=(-x,y)$, an order-2 automorphism. Let $W$ be
@@ -386,10 +387,10 @@ $$
 S_{a,b} = R_{a,b}\cup\sigma(R_{a,b}).
 $$
 
-$R_{a,b}$ is an "inner band" of full width $2$ and height $a$, plus an "outer
-band" of half-width $1$ and height $b$; $S_{a,b}$ reflects (doubles) only the
-asymmetric outer band. Writing $\mu_{\log}$ for the natural log of ordinary
-Euclidean area:
+$R_{a,b}$ is an inner band of width $2$ and total height $2a$, plus two
+outer strips of width $1$ and height $b$ each; $S_{a,b}$ reflects (doubles)
+only the asymmetric outer strips. Writing $\mu_{\log}$ for the natural log
+of ordinary Euclidean area:
 
 $$
 \mu_{\log}(S_{a,b}) = \log(4a+4b) \;>\; \mu_{\log}(R_{a,b}) = \log(4a+2b).
@@ -410,7 +411,8 @@ $\mu_{\log}(S_{a,b}) > 0 > \lambda > \mu_{\log}(R_{a,b})$
 (the source notes concrete values of $a,b,\lambda$ exist satisfying this —
 independently confirmed here, e.g. $a=0.1,b=0.2$ gives
 $\mu_{\log}(R_{a,b})=\log(0.8)\approx-0.223$, so any
-$\lambda\in(-0.223,0)$ works, with $\mu_{\log}(S_{a,b})=\log(1.6)\approx0.47>0$).
+$\lambda\in(\log(0.8),0)$ works, with
+$\mu_{\log}(S_{a,b})=\log(1.2)\approx0.182>0$).
 This makes $\rho:=\mu_{\log}(R_{a,b})/\lambda > 1$ well-defined, and $\lambda$
 is read as the log-volume of a region $R_\lambda$ "defined over $W$."
 
@@ -442,6 +444,55 @@ inequalities chosen; it is one existence example of a qualitative phenomenon
 and not a model of IUT III's actual objects beyond that one point. His own
 closing line calls Step (xi) "precisely the sort of situation" illustrated
 here (Rpt2018, p.26) — an analogy claim, not an identity claim.
+
+### 5.8.1 Exact parameter test (our calculation, not an IUT result)
+
+The strict sign pattern used in (LVEx) is **not automatic** for
+$a,b>0$. Set $r=4a+2b$ and $s=4a+4b$. Since $r<s$,
+there exists a $\lambda$ with
+$\log s>0>\lambda>\log r$ **if and only if**
+
+$$
+r<1<s
+\quad\Longleftrightarrow\quad
+0<a<\tfrac14,\qquad
+\frac{1-4a}{4}<b<\frac{1-4a}{2}.
+$$
+
+For every such pair, the permitted values are exactly
+$\lambda\in(\log r,0)$, and
+$\rho=\log r/\lambda>1$. The equivalence follows by taking
+exponentials, then solving $4a+2b<1<4a+4b$ for $b$.
+It is an **existence criterion for this example**, not a theorem
+about IUT's admissible indeterminacies.
+
+| $(a,b)$ | $(r,s)$ | $\lambda=-1/10$? | What the calculation tests |
+| --- | --- | --- | --- |
+| $(1/10,1/5)$ | $(4/5,6/5)$ | Yes | Corrected numerical example above |
+| $(1/20,3/10)$ | $(4/5,7/5)$ | Yes | Same $\log r$ and same gluing scale $\lambda/\log r$, **different** hull log-volume |
+| $(3/20,1/10)$ | $(4/5,1)$ | No | Boundary $\log s=0$ breaks the strict sign pattern |
+| $(1/10,7/20)$ | $(11/10,9/5)$ | No | $\log r>0$, so no allowed negative $\lambda$ |
+
+Indeed, the hull's increase is
+
+$$
+\log s-\log r
+=\log\left(1+\frac{2b}{4a+2b}\right),
+\qquad 0<\log s-\log r<\log 2
+\quad(a,b>0).
+$$
+
+The two admissible rows have the **same input log-area and the same
+linear gluing map** but different outputs after symmetrization.
+Therefore no rule depending *only* on the input log-area and this
+chosen gluing map determines the hull's log-area: the shape parameter
+$b$ matters. This is a concrete, falsifiable distinction between a
+linear transport and a geometry-dependent set operation. The gain is
+bounded by $\log 2$ in **this toy model**, while $\rho$ can be made
+arbitrarily large by letting $\lambda\uparrow0$ for fixed $a,b$ in the
+allowed region. Neither observation supplies a $j^2$ estimate,
+an IUT comparison, or a justification for the native $q$-pilot
+membership in Step (xi).
 
 A second, much more compact version of the same rhetorical move appears
 earlier in the same report as **(Smm)** (Rpt2018, p.2, quoted in §5.5, point
