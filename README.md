@@ -18,6 +18,7 @@ with heights, valuations, and elliptic curves can start at the project map.
 | [Project map](guide/00-map.md) | The questions, dependency directions, and evidence labels |
 | [The abc target](guide/01-abc-target.md) | Definitions, worked examples, an elementary equivalence proof, and the conditional Szpiro bridge |
 | [Prerequisite route](guide/02-prerequisites.md) | A selective study path with exercises and stopping points |
+| [Polynomial abc lab](guide/02a-polynomial-abc.md) | An optional, complete proof of an instructive analogy, not of abc over integers |
 | [Research queue](guide/08-work-queue.md) | The ten stages from the plan reorganized into verifiable tasks and review gates |
 | [Original plan](Research-project-plan.md) | The motivating proposal; its citations and claims require independent checking |
 

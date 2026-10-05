@@ -65,3 +65,6 @@ or critique of IUT's actual comparison.
 Read [01](01-abc-target.md) to level 2, then follow the
 [project map](00-map.md); consult the source-checked IUT route when
 available rather than attempting every preparatory paper at level 3.
+For a fully worked but **optional** analogy, prove the
+[polynomial abc theorem](02a-polynomial-abc.md); it does not establish
+the integer conjecture.
