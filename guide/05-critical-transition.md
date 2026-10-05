@@ -353,8 +353,10 @@ The documents diverge on:
 
 Neither primary document, read on its own, resolves this. Each gives a
 self-consistent account of why the other side is mistaken. Readers wanting
-to go further than this file should attempt the checklist in §5.10, and
-should note the asymmetry in available independent (non-participant)
+to go further than this file should inspect the
+[six-node/paper-side object ledger](09b-object-identity-ledger.md),
+attempt the checklist in §5.10, and note the asymmetry in
+available independent (non-participant)
 secondary commentary recorded in §5.9 and flagged again in §5.12.
 
 ---
@@ -408,8 +410,8 @@ $G$-symmetric object whose log-volume is read off from $S_{a,b}$.
 
 Now pick $\lambda\in\mathbb{R}$ with
 $\mu_{\log}(S_{a,b}) > 0 > \lambda > \mu_{\log}(R_{a,b})$
-(the source notes concrete values of $a,b,\lambda$ exist satisfying this —
-independently confirmed here, e.g. $a=0.1,b=0.2$ gives
+(the source states that such values exist but gives **no numerical
+triple**; our independently chosen $a=0.1,b=0.2$ gives
 $\mu_{\log}(R_{a,b})=\log(0.8)\approx-0.223$, so any
 $\lambda\in(\log(0.8),0)$ works, with
 $\mu_{\log}(S_{a,b})=\log(1.2)\approx0.182>0$).

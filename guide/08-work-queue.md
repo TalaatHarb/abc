@@ -17,7 +17,7 @@ results must meet the shared evidence rules in [00](00-map.md).
 | 6 — IUT III | [03](03-iut-route.md), [05](05-critical-transition.md): Theorem 3.11, Corollary 3.12, Step (xi) | Stages 4–5; primary IUT III | Independent expert can check each comparison or point to the exact gap |
 | 7 — dispute | [05](05-critical-transition.md): Scholze–Stix objection and Mochizuki's answer | Stage 6; both sides' primary texts | Each disputed arrow has both interpretations and a testable obligation |
 | 8 — IUT IV and Lean | [04](04-claim-dependencies.md), [06](06-lean-boundary.md), [06a](06a-lean-dependencies.md): downstream claims and conditional Lean assumptions | Stages 0–1; IUT IV; pinned Lean snapshot | Trace a formal declaration to abc without assuming its unproved input |
-| 9 — adversarial review | [09](09-critical-mechanism.md) and [09a](09a-adversarial-trial.md): type/identity ledger, numerical reduction, and independent source readings of one edge | First-pass locators from stages 6–8; checked [Project LANA report](sources.md) | Type the proposed compatibility (9-1) and its connection, if any, to Step (xi); record a concrete correction, missing premise, or reviewed proof with its exact source. Agreement or a vote is not a proof |
+| 9 — adversarial review | [09](09-critical-mechanism.md), [09b](09b-object-identity-ledger.md), and [09a](09a-adversarial-trial.md): typed comparison, exact six-node/Step-(xi) arrow crosswalk, and independent source readings | First-pass locators from stages 6–8; checked [Project LANA report](sources.md) | Type the native-$q$ to bounded-output comparison under the paper's quantified choices; record a source-level map, a countermodel satisfying its actual premises, or the first precise missing premise. Agreement or a vote is not a proof |
 | 10 — exposition | Connected reader guide and diagrams from checked edges | Stages 0–9 | Each explanation links back to the exact node, arrow, source, and remaining gaps |
 
 ## Next bounded investigations
@@ -48,6 +48,26 @@ PDF page numbers and printed page numbers can differ; record which is used.
 Prioritize **stage 6**, then **stages 7 and 8**, before producing a polished
 "IUT in 20 diagrams." A diagram is a deliverable only after its edges can be
 audited.
+
+**Phase II object-and-arrow checkpoint (2026-10-06):** The
+[six-node redraw and paper-side ledger](09b-object-identity-ledger.md)
+separate SS's labelled top/bottom arrows from four unlabelled
+diagonals, a $j^2$ rescaling in its **prose**, and IUT III's
+visibly overlined hull. Step (xi-e) describes a link of
+numerical values; (xi-f) first asserts the decisive membership.
+Remark 3.9.5 (Ob8)/(Ob9), PDF pp. 137--139, gives a
+**vertical** comparison and bijection of hull log-volumes, not
+an explicitly selected native-$q$ output. This locates the
+*proposed* crosswalk; it does **not** derive its missing
+choice-compatible law or establish whether SS's loop is mandatory.
+The [corrected toy experiment](05-critical-transition.md#581-exact-parameter-test-our-calculation-not-an-iut-result)
+gives the exact $(a,b,\lambda)$ sign region and two equal-input
+shapes with different hull outputs; [09](09-critical-mechanism.md)
+gives a finite-set version and a weaker but also unproved
+one-sided numerical test. Count verified arrows and exact remaining
+premises, **not** subjective percentages of understanding or the
+number of agents. The [repeatable experiment gates](09a-adversarial-trial.md)
+keep additional AI rounds bounded to this edge.
 
 **Phase II checkpoint (2026-10-05):** [09](09-critical-mechanism.md)
 isolates a checkable algebraic consequence of the *stated* Corollary 3.12

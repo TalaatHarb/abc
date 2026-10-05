@@ -5,7 +5,8 @@ representation in IUT III, Theorem 3.11, to the log-volume bound in
 Corollary 3.12's Step (xi)? This is the `IUT-N1 -> IUT-N2` edge in the
 [claim ledger](04-claim-dependencies.md). The
 [source-paired dispute guide](05-critical-transition.md) reports both
-interpretations; this file records smaller mathematical tests, **not a new
+interpretations; the [source-named object/arrow crosswalk](09b-object-identity-ledger.md)
+compares their diagrams. This file records smaller mathematical tests, **not a new
 proof or a verdict on the published argument**. The later
 [Project LANA interim report](sources.md) proposes a more specific
 compatibility test; it explicitly does not prove it.
@@ -25,8 +26,8 @@ numbers refer to the hosted preprint PDFs listed in the
 | `M3` | $\Theta$-pilot at $(0,0)$ $\leftrightarrow$ $q$-pilot at $(1,0)$ | [IUT I, Corollary 3.7(i), PDF p. 88](sources.md), and [IUT III, Definition 3.8(ii), pp. 112–113](sources.md): prime-strip **poly-isomorphism**; IUT I, Remark 3.7.1, p. 89, does not distinguish one cross-theater isomorphism | Not a ring/scheme isomorphism; no numerical log-volume identity follows solely from this correspondence |
 | `M4` | Multiradial representations ${}^{0,\circ}\mathcal R_{\mathrm{LGP}}$ and ${}^{1,\circ}\mathcal R_{\mathrm{LGP}}$ | [IUT III, Theorem 3.11(i), pp. 153–155](sources.md): a *different*, permutation-symmetry poly-isomorphism transports representations across columns; Step (xi-b), pp. 181–182, invokes it | How this map combines with `M3`, and whether the **same** log-volume function survives horizontal transport, was not established by the passages independently checked |
 | `M5` | Vertically varying log-Kummer correspondences | [IUT III, Theorem 3.11(ii), pp. 155–156](sources.md): one specified component is precisely compatible with log-volumes; (Ind3) records only upper semi-compatibility for others | Vertical compatibility is **not by itself** a theorem of horizontal `M4` log-volume preservation |
-| `M6` | Abstract, concrete (including the $\ell^\star$-member $\Theta$ family), and arithmetic-degree real lines | [Scholze–Stix, section 2.2, PDF pp. 9–10](sources.md) draws six diagram nodes, with a literal equality at the bottom and a $j^2$ factor on the left; see [05](05-critical-transition.md) | Determine which diagram arrows are actual IUT isomorphisms of ordered real lines and which might instead encode non-invertible hull/containment |
-| `M7` | A possible region $P$, its holomorphic hull $\phi(P)$, and the arithmetic line obtained by $\det^{\otimes M}(\phi(P))$ | [IUT III, Remark 3.9.5, pp. 127–128, (Ob1)–(Ob3), (Ob6), pp. 131–135](sources.md); Step (xi-c), PDF p. 182, explicitly writes ${}^{1,\circ}\overline{\mathcal U}\supseteq{}^{1,\circ}\mathcal U$ (overline image-checked), followed by determinant/log-volume in (xi-d), p. 183 | Inclusion/majorization is not an equality of real-line isomorphisms; verify the actual bound and all of its (Ob8)/(Ob9) hypotheses in Step (xi) |
+| `M6` | Abstract, concrete (including the $\ell^\star$-member $\Theta$ family), and arithmetic-degree real lines | [Scholze–Stix, section 2.2, PDF pp. 9–10](sources.md) draws six nodes with a literal equality at the bottom; its **text** proposes inserting a $j^2$ factor somewhere on the left, but the figure labels no such arrow; see the [six-node redraw](09b-object-identity-ledger.md) | Decide whether IUT's actual path must factor through this proposed diagram of identifications or uses a separate hull/containment; the figure draws **no** hull arrow |
+| `M7` | A possible region $P$, its holomorphic hull $\phi(P)$, and the arithmetic line obtained by $\det^{\otimes M}(\phi(P))$ | [IUT III, Remark 3.9.5, pp. 127–128, (Ob1)–(Ob3), (Ob6), pp. 131–135, and (Ob8)/(Ob9), pp. 137–139](sources.md); Step (xi-c), PDF p. 182, visibly writes ${}^{1,\circ}\overline{\mathcal U}\supseteq{}^{1,\circ}\mathcal U$, followed by determinant/log-volume in (xi-d), p. 183 | Hull inclusion and (Ob9)'s **vertical** log-volume bijection do not themselves pick the native $q$ value in the output bound; audit its admissible choice and numerical law |
 | `M8` | Native $-|\log(q)|$ and the Step-(xi) output region $\mathbb R_{\leq-|\log(\Theta)|}$ | [IUT III, Corollary 3.12, p. 173, Step (xi-d)–(xi-f), pp. 183–184](sources.md): membership of the native value in the region is **asserted**; the inference is `DISPUTED` | Exhibit the exact compatible route from `M3`/`M4`/`M7` to this *particular* native value, not merely an isomorphic copy |
 | `M9` | Value-group real line $R_{\mathrm{val}}$ and volume-container real line $R_{\mathrm{ss}}$ | [Project LANA report, section 9.2, PDF pp. 45–46](https://github.com/katobungen/LANA_report_202607/blob/b8e4636edea64d0b9fdc1d7f6a51e63c1f5d1676/LANA_report_202607.pdf#page=45): the latter uses equal-volume classes of measurable adelic regions; these are *the report's* two distinct pointed real-vector-space constructions | Show that the native and reconstructed maps use compatible source **and** target copies, not merely isomorphic-looking lines; separately connect these lines to IUT III's numerical output region |
 | `M10` | $\eta_q$ from the native $q$-pilot and $\eta^{\mathrm{anab}}_S$ reconstructed after a choice of integral-structure data $S$ | Same report, section 9.2, PDF p. 46: asks for a suitable $S$ with $\eta_q=\eta^{\mathrm{anab}}_S$ (9-1); p. 49 says the team does **not** have a proof | Establish existence of that $S$ and a compatible equality of maps; the report's proposed reduction is not itself a theorem of IUT III |
@@ -63,6 +64,13 @@ alone**, not a claim that no other IUT lemma supplies the fact.
 | Permutation transport (`M4`) | A poly-isomorphism between the two labeled multiradial representations | The native $q$-pilot volume function with the transported $\Theta$-pilot volume function | Check its numerical effect under (Ind1)–(Ind3), separately from the $\Theta$-link |
 | Vertical log-Kummer (`M5`) | Precise log-volume compatibility for a specified component, upper semi-compatibility for others | The horizontal compatibility of `M4` | Use the stated component and quantifiers; do not extrapolate to the entire lattice |
 | Hull and determinant (`M7`) | An invariant container and an arithmetic line with a *one-sided* volume comparison | An invertible ordered-real-line map or equality of the original region's volume | Show that the **native** $q$-value lies in the correct output region (`M8`) |
+
+Remark 3.9.5(vii), (Ob8)/(Ob9), PDF pp. 137--139, supplies a
+**vertical** log-Kummer comparison and a natural bijection of hull
+log-volumes across a log-link; it is not an empty citation. The
+[arrow audit in 09b](09b-object-identity-ledger.md) records why
+this still leaves the *particular native* $q$ value and the
+choice-compatible output bound as distinct obligations.
 
 ## A concrete candidate for the missing comparison
 
@@ -164,6 +172,43 @@ value $-1$ lies in the bounded set, but the native value $-1/2$
 does not: $T=1>Q=1/2$. This is a **countermodel to replacing
 compatibility by mere isomorphism**, not a model of IUT's actual maps.
 
+### A weaker numerical test, with its own unproved premise
+
+For the **designated inputs** that the paper actually needs, equality
+of the two maps is stronger than the following *one-sided* compatibility:
+
+$$
+\nu(\eta_q(x))\leq\nu(\eta^{\mathrm{anab}}_S(x)).
+\tag{2}
+$$
+
+If the reconstructed membership and output bound in conditions 2–3
+above are independently established, (2) gives
+$-Q\leq\nu(\eta^{\mathrm{anab}}_S(x))\leq-T$. This is another
+**conditional ordinary-mathematics lemma**, not a claim that IUT III
+or the Project LANA report proves (2). It does not assume the desired
+native output-region membership, but its *direction*, admissible
+choice $S$, common evaluation $\nu$, and quantified set of inputs
+would all require source-level justification. Reverse the sign in
+(2) and the conclusion need not follow: the countermodel just above
+has $-1=\nu(\eta^{\mathrm{anab}}_S(x))<
+\nu(\eta_q(x))=-1/2$ while $T>Q$.
+
+The alternative is **strictly weaker at one input**: with
+$V=W=\mathbb R$, $x=-1$, $\nu$ the identity,
+$\eta^{\mathrm{anab}}_S(v)=v$,
+$\eta_q(v)=2v$, and $\mathcal A_{1,S}=(-\infty,-1]$,
+both maps are order-preserving linear isomorphisms and (2) holds
+at $x$, but the maps are not equal. There is an important quantifier
+trap. If (2) were asserted for **every** $v\in V$, and both evaluated
+maps $\nu\circ\eta_q$ and $\nu\circ\eta^{\mathrm{anab}}_S$ were
+additive, applying it to $v$ and $-v$ would force their evaluations
+to be equal everywhere. Even then, equality of the maps themselves
+would require an additional property such as injectivity of $\nu$.
+Thus a one-sided test may only be genuinely weaker on a restricted
+input set; it is not a shortcut around the paper's quantifiers or
+the missing comparison.
+
 ## A small algebraic reduction that can actually be checked
 
 Let $T$ and $Q$ denote **real numerical values** corresponding to
@@ -244,7 +289,38 @@ not from multiplying a number by a scalar. The independent trial
 recomputed these areas, but **neither** this example nor the
 two-copy example above proves that IUT's actual Step-(xi) output
 contains the *native* $q$-pilot value. That is precisely the
-compatibility still to be checked.
+compatibility still to be checked. The
+[exact parameter experiment in 05 §5.8.1](05-critical-transition.md)
+corrects this guide's numerical example, characterizes when the analogy's
+strict sign pattern can hold, and finds two admissible shapes with
+the same input log-area but different hull log-areas. The
+$a=b=1$ example here shows **only** an area increase: its positive
+input log-area does not meet that stricter sign pattern.
+
+### A terminology-free hull experiment
+
+Let a finite group $G$ act by measure-preserving maps on a measure
+space, and set $H(A)=\bigcup_{g\in G}gA$ for a measurable set
+with $0<\mu(A)<\infty$. Then $A\subseteq H(A)$,
+$H(H(A))=H(A)$, and
+
+$$
+0\leq\log\mu(H(A))-\log\mu(A)\leq\log|G|.
+$$
+
+The first two assertions follow from the identity and group
+composition; monotonicity and finite subadditivity of measure give
+$\mu(A)\leq\mu(H(A))\leq\sum_g\mu(gA)=|G|\mu(A)$.
+Nevertheless the hull's output **does not depend on input volume
+alone**. For a four-point set with counting measure, let
+$G=\{1,\sigma\}$ where $\sigma=(1\ 2)(3\ 4)$.
+The sets $A=\{1,3\}$ and $B=\{1,2\}$ each have volume $2$,
+but $H(A)=\{1,2,3,4\}$ has volume $4$ while $H(B)=B$
+has volume $2$. This finite example isolates the difference between
+an invertible map *of numbers* and a set operation that needs more
+than a number as input. It is a candidate for a tiny machine-checked
+**toy** lemma; it does **not** identify IUT's holomorphic hull with
+this orbit union or give any of IUT's required comparisons.
 
 ## The next exact obligations
 

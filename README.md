@@ -33,6 +33,7 @@ route, but should not skip the source or dispute status labels.
 | [Working dictionary](guide/07-dictionary.md) | Standard definitions, comparison cautions, and IUT-specific reading questions |
 | [Research queue](guide/08-work-queue.md) | The ten stages from the plan reorganized into verifiable tasks and review gates |
 | [Critical-mechanism audit](guide/09-critical-mechanism.md) | A typed object/transport ledger, conditional map-to-bound reduction, diagram, and deliberately limited toy models |
+| [Object-identity ledger](guide/09b-object-identity-ledger.md) | The six distinct SS real-line nodes, IUT III's hull, a source-paired arrow crosswalk, and explicit unresolved maps |
 | [Adversarial trial](guide/09a-adversarial-trial.md) | Independent source readings, a dependent formalizer's test, and the exact remaining proof obligations |
 | [Source register](guide/sources.md) | Checked references, pending audits, and a citation policy |
 | [Original plan](Research-project-plan.md) | The motivating proposal; its citations and claims require independent checking |
@@ -54,7 +55,7 @@ different kinds of evidence. In particular, a checked implication
 The goal is a sequence of explanations that a mathematician can challenge at
 a specific arrow, not a simplified story that hides the arrow. Text here is
 original commentary and links to the source material, not a copy of the
-papers. Snapshot of this reading path: **2026-10-05**.
+papers. Snapshot of this reading path: **2026-10-06**.
 
 ## Run the reading site (hosting, not mathematical evidence)
 

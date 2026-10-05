@@ -16,8 +16,11 @@ route is [02](02-prerequisites.md); questions 2–3 have a
 [source-paired dispute guide](05-critical-transition.md). The
 [Lean audit](06-lean-boundary.md) supplies a *conditional* comparison.
 The [critical-mechanism audit](09-critical-mechanism.md) and
-[adversarial trial](09a-adversarial-trial.md) test one disputed arrow rather
-than adding more unverified arrows. Work still required is tracked in
+[object-identity ledger](09b-object-identity-ledger.md) distinguish
+SS's real-line comparison diagram from IUT III's hull inclusion.
+The [adversarial trial](09a-adversarial-trial.md) tests the unresolved
+native-$q$ comparison rather than adding unverified arrows.
+Work still required is tracked in
 [08](08-work-queue.md).
 
 ## Two directions of travel
