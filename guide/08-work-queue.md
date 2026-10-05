@@ -53,16 +53,19 @@ audited.
 isolates a checkable algebraic consequence of the *stated* Corollary 3.12
 inequality under an explicit positivity and normalization assumption, and
 uses a two-copy model to expose an identification/quantifier hazard.
-[09a](09a-adversarial-trial.md) specifies the evidence contract and
-records the first independent proponent, critic, and definitions-only
-readings. They distinguish the critics' real-line-isomorphism loop
-from the proposed hull/containment route, without establishing the
-necessary compatibility with the *native* $q$-value. Project LANA's
-checked [interim report](sources.md) proposes the two-map test (9-1)
-but states explicitly that it has no proof of this equality. The
-dependent formalizer's type-level trial remains to be recorded.
-These are tools for locating the missing justification, not a
-verification of IUT III or a resolution of abc.
+[09a](09a-adversarial-trial.md) records three independent source
+readings and a dependent ordinary-mathematics formalizer. The
+formalizer verified that SS's drawn hexagon has no hull arrow while
+IUT III, Step (xi-c), has an image-checked, overlined hull
+containing a distinct pre-hull object. The
+[typed conditional bridge](09-critical-mechanism.md) requires a
+specified map equality, admissible reconstructed output, and a
+common numerical evaluation; mere isomorphism is insufficient.
+Project LANA's checked [interim report](sources.md) explicitly
+has no proof of its map equality (9-1), and the further output-region
+bridge is not established here. These are tools for locating the
+missing justification, not a verification of IUT III or a
+resolution of abc.
 
 **Stages 1 and 4–6 checkpoint (2026-10-05):** The [paper-side
 route](03-iut-route.md) and [15-node graph](04-claim-dependencies.md)

@@ -141,12 +141,66 @@ the Lean result remains only a
 `CONDITIONAL_FORMALIZATION`. Agreement here is limited to a better
 specified question, not the answer.
 
+## Trial 1: dependent formalizer D
+
+D received the three reports **after** A/B/C had stopped, then
+compared their incompatible arrow types against IUT III, the pinned
+[Project LANA report](sources.md), and the pinned
+[Lean code](06-lean-boundary.md). D wrote an
+[ordinary-mathematics conditional lemma and countermodel](09-critical-mechanism.md),
+**not** a Lean proof of IUT.
+
+One small but consequential **source check is resolved**: the SS
+hexagon reproduced as Figure 7 in the Project LANA report (PDF
+p. 47) draws isomorphism/equality arrows, not a hull-containment
+arrow. IUT III, Step (xi-c), PDF p. 182, visibly writes
+${}^{1,\circ}\overline{\mathcal U}\supseteq{}^{1,\circ}\mathcal U$
+before Step (xi-d)'s log-volume calculation. The overline is present
+in the PDF image but **lost in plain-text extraction**, which can
+misleadingly render this as $U\supseteq U$. A reader can check both
+figures side by side without accepting either side's proof claim.
+This establishes a difference in the *drawn operations*, **not**
+that the SS loop is avoidable or that the containment proves the
+desired bound.
+
+For a specified input $x$, D's typed test distinguishes three
+independent obligations: an admissible $S$ with the report's map
+equality $\eta_q=\eta^{\mathrm{anab}}_S$; membership of the
+*reconstructed* output in a bounded admissible set; and a shared
+log-volume evaluation that both bounds that set and reads the
+*native* $q$-value as $-Q$. Only with **all three** does substitution
+give $-Q\le -T$. The report's section 9.3 *outlines* a link from
+(9-1) to output-region membership but does not prove the full
+bridge; section 10.5 explicitly has no proof of (9-1). The
+[two-map countermodel](09-critical-mechanism.md) shows that the
+mere existence of isomorphisms cannot replace equality of the
+specified maps. The extra assumptions are listed, not silently
+declared facts of IUT III.
+
+The formalization boundary is also **type-level**, not merely a
+missing citation:
+
+| Artifact | Checked type/status | Missing bridge |
+| --- | --- | --- |
+| Project LANA report, §9.2, PDF pp. 45–46 | Proposed equality (9-1) of two maps $R_{\mathrm{val}}\to R_{\mathrm{ss}}$; `UNVERIFIED` | Connect these exact maps and a common input to IUT III's hull/output-region bound |
+| [Pinned `Iut/Cor312/Statement.lean:78–91`](https://github.com/lana-agents/iut/blob/d9465c111ec4073709f67e9fccec7e3eb374a816/Iut/Cor312/Statement.lean#L78-L91) | `Corollary312Variant X : Prop` is the unproved inequality `X.qPilot.lhs ≤ X.rhsData.rhs` | Derive it **for the concrete Lean data** from faithfully modeled paper constructions; no term deriving it from (9-1) was found in the pinned code audit |
+| [Pinned `Plans/Iut4Sec1Spec.md`, §2.2](https://github.com/lana-agents/iut/blob/d9465c111ec4073709f67e9fccec7e3eb374a816/Plans/Iut4Sec1Spec.md) | `Corollary312Input` is a proposed structure in a **paused Markdown plan**, not the proved input of that Lean theorem | Do not identify its carriers or fields with the separate `Corollary312Variant` strand without a checked bridge |
+| [Pinned conditional capstone, lines 37–46](https://github.com/lana-agents/iut/blob/d9465c111ec4073709f67e9fccec7e3eb374a816/Iut/Tripod/ClassicalAbcGenuineCanLift.lean#L37-L46) | `ClassicalABC` follows **if** the variant holds for the required data; `CONDITIONAL_FORMALIZATION` | The capstone does not prove its `h312` input or the report's (9-1) |
+
+**Remaining human-review question:** Does the *published* Step
+(xi-a)–(xi-f), together with all its cited earlier lemmas, establish
+the same-input, same-output compatibility and region bound for the
+native $q$-pilot, with its stated indeterminacies? If not, point to
+the earliest arrow that fails to type or the exact extra premise;
+if so, give a reviewed derivation. The four AI roles and the report
+have not supplied that derivation, so `IUT-N2` remains `DISPUTED`.
+
 ## Relation to the status of abc
 
 Keep three questions separate: whether abc is true; whether IUT I–IV
 establish it; and whether a pinned Lean development checks a *conditional*
 implication given an unproved substitute input. An elementary
 [algebraic equivalence](09-critical-mechanism.md) or a successful toy
-formalization answers neither of the first two questions. The trial
-should produce a precise question that independent experts can agree to
-test, even if they cannot yet agree on its answer.
+formalization answers neither of the first two questions. This trial
+produced a more precise question for independent experts to test, not
+agreement on its answer.

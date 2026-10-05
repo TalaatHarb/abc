@@ -65,7 +65,7 @@ for that layer).
 | `IUT-N5` | Corollary 2.3: Diophantine inequality $\mathrm{ht}_{\omega_X(D)} \lesssim (1+\varepsilon)(\mathrm{log\text{-}diff}+\mathrm{log\text{-}cond})$ for arbitrary hyperbolic $U_X$; "coincides precisely" with `[GenEll]` Thm. 2.1(i) | `ASSERTED_IN_IUT` | IUT IV, Cor. 2.3, p. 54 (= Intro "Theorem A", p. 3) | `IUT-N4`, `IUT-G1` |
 | `IUT-N6` | abc, Vojta (hyperbolic curves), and Szpiro conjectures "follow as special cases" of `IUT-N5`, via classical Frey-curve/Belyi-map reduction and `[Vjt]` | `STANDARD` (classical descent step itself; conclusion of the overall route is not thereby `STANDARD` — see `03-iut-route.md` §9) | IUT IV, pp. 1–2, citing `[Vjt]` = Vojta, *Diophantine approximations and value distribution theory*, LNM 1239 (1987) | `IUT-N5` |
 | `IUT-G1` | `[GenEll]` Thm. 2.1: height/general-position results for elliptic curves, used by both `IUT-N4` and `IUT-N5` | `STANDARD` (qualified — see §1) | S. Mochizuki, *Arithmetic Elliptic Curves in General Position*, Math. J. Okayama Univ. 52 (2010), pp. 1–28 | — (pre-dates IUT I–IV; not itself part of the 2018 dispute) |
-| `IUT-F1` | LANA Lean repository: formal theorems of the shape "`Corollary312Input` (explicit unproved hypothesis, including $-1 \leq C_{\Theta}$) ⟹ [ABC-shaped conclusion]" | `CONDITIONAL_FORMALIZATION` | `lana-agents/iut`, `README.md` and `Plans/Iut4Sec1Spec.md` (fetched 2026; see §7 for URLs) | Assumes, but does **not** derive, a stand-in for `IUT-N2`; see §5 |
+| `IUT-F1` | Pinned LANA Lean repository: the unproved proposition `Corollary312Variant X := X.qPilot.lhs ≤ X.rhsData.rhs` is an **assumption** of a conditional theorem concluding `ClassicalABC`; a different `Corollary312Input` is *sketched in a Markdown plan* | `CONDITIONAL_FORMALIZATION` | [`Statement.lean:78–91`](https://github.com/lana-agents/iut/blob/d9465c111ec4073709f67e9fccec7e3eb374a816/Iut/Cor312/Statement.lean#L78-L91), [`ClassicalAbcGenuineCanLift.lean:37–46`](https://github.com/lana-agents/iut/blob/d9465c111ec4073709f67e9fccec7e3eb374a816/Iut/Tripod/ClassicalAbcGenuineCanLift.lean#L37-L46), [pinned plan](https://github.com/lana-agents/iut/blob/d9465c111ec4073709f67e9fccec7e3eb374a816/Plans/Iut4Sec1Spec.md) | Assumes a stand-in for `IUT-N2`; neither the Lean variant nor the plan's distinct placeholder proves `IUT-U1` or the published Step (xi) |
 | `IUT-F2` | Mochizuki/RIMS "Formalization of IUT" slide deck: skeletal Lean material targeting an informally-labeled step "3.11.5 ⟹ 3.12" | `UNVERIFIED` (read in full; self-described as a communication aid, not a verification — see §5) | `Formalization of IUT (2026-04).pdf`, kurims homepage (URL §7) | Related informally to `IUT-N1`→`IUT-N2`; not a checked derivation of either |
 | `IUT-U1` | Project LANA's proposed compatibility: for a suitable admissible $S$, the native $q$-pilot map $\eta_q$ equals the reconstructed map $\eta^{\mathrm{anab}}_S$ | `UNVERIFIED` **compatibility**; the report itself was read directly | [Interim report](https://github.com/katobungen/LANA_report_202607/blob/b8e4636edea64d0b9fdc1d7f6a51e63c1f5d1676/LANA_report_202607.pdf), §9.2, PDF p. 46, equation (9-1); authors explicitly report no proof in §10.5, p. 49 | Candidate link in the `IUT-N1`→`IUT-N2` dispute, **not** a consequence established by `IUT-F1`; see [09](09-critical-mechanism.md) |
 
@@ -151,44 +151,31 @@ repository verifies the proposal.
 
 ### 5.1 `IUT-F1` — the LANA project (`lana-agents/iut`), `CONDITIONAL_FORMALIZATION`
 
-Fetched directly (`README.md` and `Plans/Iut4Sec1Spec.md`, URLs in §7). The
-repository's own `README.md` states explicitly that the project **"does
-not verify IUT."** Its Lean development includes a structure
-`Corollary312Input` whose fields include `CTheta : ℝ` and
-`neg_one_le_CTheta : -1 ≤ CTheta` — i.e., Corollary 3.12's numerical
-conclusion appears **as an assumed field of a hypothesis structure, not as a
-derived theorem** — plus a field `cor312_relation`. Named conditional
-theorems built on this hypothesis include (per the README, as of the fetch
-date) `Iut.cor312Variant_implies_abc`,
-`Iut.cor312Variant_implies_abc_concrete`,
-`Iut.cor312Variant_implies_abc_curves`, and
-`Iut.Anabelian.cor312Variant_implies_abc_model`. The project's own
-documentation repeatedly states an explicit honesty boundary, e.g. that the
-Lean development "must not silently identify the variant with Mochizuki's
-published Corollary 3.12" and "must not encode any disputed implication as a
-proved theorem."
+The repository's pinned [`README.md`](https://github.com/lana-agents/iut/blob/d9465c111ec4073709f67e9fccec7e3eb374a816/README.md)
+states that the project **"does not verify IUT."** Its actual
+[`Statement.lean:78–91`](https://github.com/lana-agents/iut/blob/d9465c111ec4073709f67e9fccec7e3eb374a816/Iut/Cor312/Statement.lean#L78-L91)
+defines `Corollary312Variant X : Prop` as the inequality
+`X.qPilot.lhs ≤ X.rhsData.rhs`, without proving it. In the same pin,
+[`classicalABC_of_variant_genuine'`](https://github.com/lana-agents/iut/blob/d9465c111ec4073709f67e9fccec7e3eb374a816/Iut/Tripod/ClassicalAbcGenuineCanLift.lean#L37-L46)
+is a theorem from a universally quantified **hypothesis** of that
+variant to `ClassicalABC`. This is an implemented *conditional*
+implication, not a Lean verification of Corollary 3.12 or Step (xi).
+The [line-by-line audit](06-lean-boundary.md) explains its additional
+dependencies and the distinct abstract and concrete downstream routes.
 
-The `Plans/Iut4Sec1Spec.md` planning document carries a banner, dated
-2026-07-20, reading (in substance) "paused after phase P6 — awaiting
-external input," tied to obtaining the actual statement of Corollary 3.12
-(tracked, per that document, as an internal issue). Read together with the
-named theorems above, the precise, non-oversimplified picture is: **a
-conditional Lean argument from an explicitly-flagged placeholder hypothesis
-to ABC-shaped conclusions is presented as implemented**, while **upgrading
-that placeholder hypothesis itself into a reviewed, faithful transcription
-of the actually-published Corollary 3.12 is the specific, separate task
-recorded as paused**. Do not read "paused" as "nothing has been formalized"
-— and do not read the existence of named theorems as "Corollary 3.12 has
-been formalized or verified." Both halves of this sentence were directly
-verified against the fetched primary documents; this guide did not
-itself re-run the project's build or independently inspect every Lean file
-(a commit-pinned, line-by-line audit of that kind is carried out in
-`guide/06-lean-boundary.md`, confirmed present as of this writing; not
-duplicated here). LANA's own documentation
-additionally records a dependency on a separate `LANA-Project/genl`
-repository specifically for `[GenEll]`-related content — an independent
-corroboration, from the Lean side, of `[GenEll]`'s load-bearing role
-identified from the primary-paper side in `03-iut-route.md` §4.
+The similarly named `Corollary312Input` appears instead as a
+**proposed structure in [`Plans/Iut4Sec1Spec.md`, §2.2](https://github.com/lana-agents/iut/blob/d9465c111ec4073709f67e9fccec7e3eb374a816/Plans/Iut4Sec1Spec.md)**,
+not as the proved input of the Lean theorem just cited. Its proposed
+fields `CTheta : ℝ`, `neg_one_le_CTheta : -1 ≤ CTheta`, and
+`cor312_relation` assume a numerical bound in a *different* planned
+strand. The plan's 2026-07-20 banner says "paused after P6 —
+awaiting external input" for that strand. Do not infer that pausing
+this plan stops the separate, compiled variant-to-abc route, or that
+either strand supplies a checked bridge to the published Corollary
+3.12. These two artifacts have different carrier types; no theorem
+connecting them was found in the pinned audit. The Lean repository
+also depends on the separate `LANA-Project/genl` package for
+`[GenEll]`-related content, as traced in [06a](06a-lean-dependencies.md).
 
 ### 5.2 `IUT-F2` — Mochizuki/RIMS's own "Formalization of IUT" material, `UNVERIFIED`
 
@@ -307,11 +294,12 @@ Journal publication record (metadata only, used for the pagination note in §0):
 
 - IUT I–IV, *Publications of RIMS* 57(1/2) (2021): `https://doi.org/10.4171/PRIMS/57-1-1`, `-2`, `-3`, `-4`
 
-LANA Lean repository (`IUT-F1`):
+LANA Lean variant and separate planning document (`IUT-F1`,
+`d9465c111ec4073709f67e9fccec7e3eb374a816`):
 
-- `https://github.com/lana-agents/iut`
-- `https://raw.githubusercontent.com/lana-agents/iut/main/README.md`
-- `https://raw.githubusercontent.com/lana-agents/iut/main/Plans/Iut4Sec1Spec.md`
+- `https://github.com/lana-agents/iut/blob/d9465c111ec4073709f67e9fccec7e3eb374a816/Iut/Cor312/Statement.lean#L78-L91`
+- `https://github.com/lana-agents/iut/blob/d9465c111ec4073709f67e9fccec7e3eb374a816/Iut/Tripod/ClassicalAbcGenuineCanLift.lean#L37-L46`
+- `https://github.com/lana-agents/iut/blob/d9465c111ec4073709f67e9fccec7e3eb374a816/Plans/Iut4Sec1Spec.md`
 
 Project LANA's independently checked interim report (`IUT-U1`, source
 register [D4](sources.md); PDF sections 8.2–8.3, 9.2, and 10.2–10.5):
@@ -330,11 +318,13 @@ register [D4](sources.md); PDF sections 8.2–8.3, 9.2, and 10.2–10.5):
    and write down what it depends on (it is not a fixed set independent of
    $K_V$, $d$, $\varepsilon_d$). This checks that "outside a finite exceptional set"
    in this table is not quietly dropping its own dependencies.
-3. For `IUT-F1`, open `Plans/Iut4Sec1Spec.md` at the URL above and find the
-   `Corollary312Input` structure. Confirm for yourself that `CTheta`/
-   `neg_one_le_CTheta` are declared as hypotheses (`structure` fields), not
-   proved as a `theorem`/`lemma`. This is the single most important check
-   in this file for understanding what "conditional" means here.
+3. For `IUT-F1`, open the **Lean source**
+   `Iut/Cor312/Statement.lean` and check that `Corollary312Variant`
+   is a `Prop`, not a proved theorem. Then open the separate **Markdown
+   plan** `Plans/Iut4Sec1Spec.md` and find its proposed
+   `Corollary312Input` structure. Do not mistake structure fields
+   *written in the plan* for compiled Lean declarations, or either
+   artifact for a proof of the published Corollary 3.12.
 4. Attempt to fetch `SS2018-05.pdf`/`SS2018-08.pdf` yourself at the URLs in
    §7. If you obtain a result other than `HTTP 403`, that is new
    information not available during this research pass and should be

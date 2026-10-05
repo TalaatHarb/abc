@@ -32,8 +32,8 @@ route, but should not skip the source or dispute status labels.
 | [Lean vocabulary](guide/06b-lean-vocabulary.md) | Typed counterparts for a few terms, not authoritative IUT definitions |
 | [Working dictionary](guide/07-dictionary.md) | Standard definitions, comparison cautions, and IUT-specific reading questions |
 | [Research queue](guide/08-work-queue.md) | The ten stages from the plan reorganized into verifiable tasks and review gates |
-| [Critical-mechanism audit](guide/09-critical-mechanism.md) | An object/transport ledger, a conditional numerical reduction, and a non-proof two-copy model of the disputed comparison |
-| [Adversarial trial](guide/09a-adversarial-trial.md) | Independent reading roles, evidence contract, and the first source-paired review of the critical edge |
+| [Critical-mechanism audit](guide/09-critical-mechanism.md) | A typed object/transport ledger, conditional map-to-bound reduction, diagram, and deliberately limited toy models |
+| [Adversarial trial](guide/09a-adversarial-trial.md) | Independent source readings, a dependent formalizer's test, and the exact remaining proof obligations |
 | [Source register](guide/sources.md) | Checked references, pending audits, and a citation policy |
 | [Original plan](Research-project-plan.md) | The motivating proposal; its citations and claims require independent checking |
 

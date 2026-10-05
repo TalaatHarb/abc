@@ -26,9 +26,9 @@ numbers refer to the hosted preprint PDFs listed in the
 | `M4` | Multiradial representations ${}^{0,\circ}\mathcal R_{\mathrm{LGP}}$ and ${}^{1,\circ}\mathcal R_{\mathrm{LGP}}$ | [IUT III, Theorem 3.11(i), pp. 153–155](sources.md): a *different*, permutation-symmetry poly-isomorphism transports representations across columns; Step (xi-b), pp. 181–182, invokes it | How this map combines with `M3`, and whether the **same** log-volume function survives horizontal transport, was not established by the passages independently checked |
 | `M5` | Vertically varying log-Kummer correspondences | [IUT III, Theorem 3.11(ii), pp. 155–156](sources.md): one specified component is precisely compatible with log-volumes; (Ind3) records only upper semi-compatibility for others | Vertical compatibility is **not by itself** a theorem of horizontal `M4` log-volume preservation |
 | `M6` | Abstract, concrete (including the $\ell^\star$-member $\Theta$ family), and arithmetic-degree real lines | [Scholze–Stix, section 2.2, PDF pp. 9–10](sources.md) draws six diagram nodes, with a literal equality at the bottom and a $j^2$ factor on the left; see [05](05-critical-transition.md) | Determine which diagram arrows are actual IUT isomorphisms of ordered real lines and which might instead encode non-invertible hull/containment |
-| `M7` | A possible region $P$, its holomorphic hull $\phi(P)$, and the arithmetic line obtained by $\det^{\otimes M}(\phi(P))$ | [IUT III, Remark 3.9.5 (Ob1)–(Ob3), (Ob6), pp. 131–135](sources.md); used in Step (xi-d), p. 183: forming the hull may *increase* log-volume | Inclusion/majorization is not an equality of real-line isomorphisms; verify the actual bound and all of its (Ob8)/(Ob9) hypotheses in Step (xi) |
+| `M7` | A possible region $P$, its holomorphic hull $\phi(P)$, and the arithmetic line obtained by $\det^{\otimes M}(\phi(P))$ | [IUT III, Remark 3.9.5, pp. 127–128, (Ob1)–(Ob3), (Ob6), pp. 131–135](sources.md); Step (xi-c), PDF p. 182, explicitly writes ${}^{1,\circ}\overline{\mathcal U}\supseteq{}^{1,\circ}\mathcal U$ (overline image-checked), followed by determinant/log-volume in (xi-d), p. 183 | Inclusion/majorization is not an equality of real-line isomorphisms; verify the actual bound and all of its (Ob8)/(Ob9) hypotheses in Step (xi) |
 | `M8` | Native $-|\log(q)|$ and the Step-(xi) output region $\mathbb R_{\leq-|\log(\Theta)|}$ | [IUT III, Corollary 3.12, p. 173, Step (xi-d)–(xi-f), pp. 183–184](sources.md): membership of the native value in the region is **asserted**; the inference is `DISPUTED` | Exhibit the exact compatible route from `M3`/`M4`/`M7` to this *particular* native value, not merely an isomorphic copy |
-| `M9` | Value-group real line $R_{\mathrm{val}}$ and volume-container real line $R_{\mathrm{ss}}$ | [Project LANA report, section 9.2, PDF p. 46](https://github.com/katobungen/LANA_report_202607/blob/b8e4636edea64d0b9fdc1d7f6a51e63c1f5d1676/LANA_report_202607.pdf#page=46) distinguishes their construction from BPS data; these are *the report's* model | Show that the two constructions below refer to compatible source **and** target copies, not merely isomorphic-looking real lines |
+| `M9` | Value-group real line $R_{\mathrm{val}}$ and volume-container real line $R_{\mathrm{ss}}$ | [Project LANA report, section 9.2, PDF pp. 45–46](https://github.com/katobungen/LANA_report_202607/blob/b8e4636edea64d0b9fdc1d7f6a51e63c1f5d1676/LANA_report_202607.pdf#page=45): the latter uses equal-volume classes of measurable adelic regions; these are *the report's* two distinct pointed real-vector-space constructions | Show that the native and reconstructed maps use compatible source **and** target copies, not merely isomorphic-looking lines; separately connect these lines to IUT III's numerical output region |
 | `M10` | $\eta_q$ from the native $q$-pilot and $\eta^{\mathrm{anab}}_S$ reconstructed after a choice of integral-structure data $S$ | Same report, section 9.2, PDF p. 46: asks for a suitable $S$ with $\eta_q=\eta^{\mathrm{anab}}_S$ (9-1); p. 49 says the team does **not** have a proof | Establish existence of that $S$ and a compatible equality of maps; the report's proposed reduction is not itself a theorem of IUT III |
 
 To complete an edge, write
@@ -101,6 +101,68 @@ structure**. Its team neither proves that the original argument
 establishes (9-1) nor reaches complete consensus that it does not.
 Agreement about the hexagon therefore does not settle the distinct
 compatibility claim.
+
+## A typed conditional bridge, not a proof of Step (xi)
+
+The dependent formalizer compared [IUT III, Step (xi-c), PDF
+p. 182](sources.md) with the Scholze–Stix hexagon reproduced in
+[Project LANA's report, Figure 7, PDF p. 47](https://github.com/katobungen/LANA_report_202607/blob/b8e4636edea64d0b9fdc1d7f6a51e63c1f5d1676/LANA_report_202607.pdf#page=47).
+The *figure* has no containment arrow. The *paper* explicitly has
+${}^{1,\circ}\overline{\mathcal U}\supseteq{}^{1,\circ}\mathcal U$:
+the overlined object is the holomorphic hull of the plain one.
+PDF text extraction drops this overline and can falsely print the
+two sides as $U\supseteq U$; check the page image. This source-level
+distinction does **not** establish that the critics' loop is avoidable
+or that the native $q$-volume lands in the hull.
+
+Here is a deliberately small **ordinary-mathematics schema**, not a
+theorem verified in IUT or Lean. For fixed initial data, let
+$V=R_{\mathrm{val}}$ and $W=R_{\mathrm{ss}}$ be the two *different*
+spaces in the report. After specifying compatible identifications,
+take maps $\eta_q,\eta^{\mathrm{anab}}_S:V\to W$, a designated
+$q$-input $x\in V$, an admissible reconstructed-output set
+$\mathcal A_{T,S}\subseteq W$, and a **shared**, normalized log-volume
+evaluation $\nu:W\to\mathbb R$. Suppose:
+
+1. A suitable admissible $S$ makes
+   $\eta_q=\eta^{\mathrm{anab}}_S$ **as maps $V\to W$** — the
+   report's still-unproved condition (9-1).
+2. The reconstruction actually places
+   $\eta^{\mathrm{anab}}_S(x)\in\mathcal A_{T,S}$; this must be
+   checked using the hull, indeterminacies, and the same $S$.
+3. The output bound $\nu(z)\le -T$ holds for **every**
+   $z\in\mathcal A_{T,S}$, and the native normalization is
+   $\nu(\eta_q(x))=-Q$.
+
+Then, by substitution rather than by identifying labels,
+
+$$
+-Q=\nu(\eta_q(x))
+=\nu(\eta^{\mathrm{anab}}_S(x))
+\le -T,
+\qquad\text{hence}\qquad T\le Q.
+$$
+
+This does **not** assume the disputed native membership
+$-Q\in\mathbb R_{\le -T}$: condition 2 concerns the independently
+constructed *reconstructed* output, and condition 3 bounds that
+output set. Neither source supplies this complete typed implication
+as a proved lemma. The report explicitly lacks a proof of condition
+1 (PDF p. 49), and its section 9.3 **outlines**, rather than
+establishes, the needed passage from (9-1) to the output region.
+Conditions 2–3, including the common normalization and the actual
+quantifiers over IUT choices, remain separate source-level
+obligations. For full Corollary 3.12 they would have to hold for its
+paper-stated data, not merely one chosen $x$.
+
+To see why "the two spaces admit an isomorphism" cannot replace
+condition 1, take $V=W=\mathbb R$, $x=-1$,
+$\eta^{\mathrm{anab}}_S(v)=v$, $\eta_q(v)=v/2$, and
+$\mathcal A_{T,S}=(-\infty,-1]$ with $\nu$ the identity.
+Both maps are order-preserving isomorphisms and the reconstructed
+value $-1$ lies in the bounded set, but the native value $-1/2$
+does not: $T=1>Q=1/2$. This is a **countermodel to replacing
+compatibility by mere isomorphism**, not a model of IUT's actual maps.
 
 ## A small algebraic reduction that can actually be checked
 
