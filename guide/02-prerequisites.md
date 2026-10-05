@@ -62,6 +62,15 @@ that the two numerical functions agree? No: equality needs an additional
 compatibility condition. This is only a logical exercise, **not** a model
 or critique of IUT's actual comparison.
 
+## Free reading assignments, with stopping rules
+
+| Before reading IUT | Read | Stop when you can... |
+| --- | --- | --- |
+| Places and local/global language | [Goldfeld, §2, PDF p. 5](https://www.math.columbia.edu/~goldfeld/ABC-Conjecture.pdf#page=5), then [Conrad, *The Local-Global Principle*](https://kconrad.math.uconn.edu/blurbs/gradnumthy/localglobal.pdf) for motivation | Explain why a real absolute value and all \(p\)-adic absolute values carry different information about a rational number |
+| Heights and elliptic curves | [Goldfeld, §§1, 3–4, PDF pp. 1, 5–7](https://www.math.columbia.edu/~goldfeld/ABC-Conjecture.pdf) | Distinguish the abc radical \(R\) from the elliptic conductor \(N_E\), and state which Frey-curve computation relates them |
+| Covers and fundamental groups | [Stacks Project, §58.5](https://stacks.math.columbia.edu/tag/0BL6), then [§58.6, Definition 58.6.1 and Theorem 58.6.2](https://stacks.math.columbia.edu/tag/0BQ8) | Say what a finite étale cover is and why \(\pi_1(X,\bar x)=\operatorname{Aut}(F_{\bar x})\) organizes these covers; full proofs can wait |
+| Machine-checked propositions | [*Theorem Proving in Lean 4*](https://lean-lang.org/theorem_proving_in_lean4/) | Distinguish a proved declaration `P -> Q` from a proof of `P` |
+
 Read [01](01-abc-target.md) to level 2, then follow the
 [project map](00-map.md); consult the source-checked IUT route when
 available rather than attempting every preparatory paper at level 3.

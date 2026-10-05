@@ -83,6 +83,13 @@ For a primitive abc triple, the associated Frey--Hellegouarch curve is
 \[
 E_{a,b}:\quad y^2=x(x-a)(x+b).
 \]
+For \(1+8=9\), the three roots of the cubic are \(0,1,-8\).
+The displayed **integral model** has discriminant
+\(16(1\cdot8\cdot9)^2=82944=2^{10}3^4\), while its abc radical is
+\(R=6\). This calculation explains why discriminant *exponents* and prime
+*support* differ; it does **not** compute the minimal discriminant or
+conductor.
+
 Goldfeld explains that after passing to a minimal model its discriminant is
 \((abc)^2\) times a bounded power of 2, and its conductor is \(R\) times a
 bounded power of 2. **Conditionally on** the Szpiro-type estimate, this
@@ -97,6 +104,10 @@ yields
 Goldfeld calls this last inequality **weak abc** ([§1, PDF p. 1](https://www.math.columbia.edu/~goldfeld/ABC-Conjecture.pdf#page=1)).
 The usual (ABC) immediately implies weak abc because
 \((abc)^{1/3}\leq c\); the reverse implication is **not derived here**.
+For instance, when \(a=1,b=c-1\), the geometric mean
+\((abc)^{1/3}\) grows like \(c^{2/3}\), not \(c\): a bound on that
+mean does not *by itself* give the desired bound on \(c\) with the
+same exponent.
 Do not turn this schematic conditional bridge into "Szpiro has been proved,"
 or silently identify the weak inequality with the target (ABC). Establishing
 which *precise* inequality IUT IV claims is a separate task.

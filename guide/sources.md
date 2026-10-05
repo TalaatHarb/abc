@@ -10,6 +10,9 @@ its bibliographic claims are *not* themselves primary evidence.
 | --- | --- | --- | --- |
 | G1 | [Dorian Goldfeld, *Modular Forms, Elliptic Curves and the abc-Conjecture*](https://www.math.columbia.edu/~goldfeld/ABC-Conjecture.pdf) | PDF pp. 1, 5–7 (`CHECKED`, 2026-10-05) | Strong/weak abc distinction; heights; discriminant, conductor, and conditional Szpiro/Frey comparison in [01](01-abc-target.md) and [02](02-prerequisites.md) |
 | C1 | [Keith Conrad, *Analogies between \(\mathbb Z\) and \(F[T]\): Homework 5*](https://kconrad.math.uconn.edu/ross2003/analogy5.pdf) | PDF p. 1 (`CHECKED`, 2026-10-05) | Exercises on polynomial abc and the role of the exponent in [02a](02a-polynomial-abc.md) |
+| C2 | [Keith Conrad, *The Local-Global Principle*](https://kconrad.math.uconn.edu/blurbs/gradnumthy/localglobal.pdf) | PDF p. 1 (`CHECKED`, 2026-10-05); rest assigned, not audited here | Motivation for places and local/global study in [02](02-prerequisites.md) |
+| S1 | [Stacks Project, §§58.5–58.6](https://stacks.math.columbia.edu/tag/0BL6) ([§58.6](https://stacks.math.columbia.edu/tag/0BQ8)) | Definitions and theorem statements on the linked pages (`CHECKED`, 2026-10-05) | Finite étale covers and the fundamental group as automorphisms of the fiber functor |
+| L1 | [*Theorem Proving in Lean 4*](https://lean-lang.org/theorem_proving_in_lean4/) | Landing page (`CHECKED`, 2026-10-05); assigned chapters not audited here | Optional background for inspecting formal proof assumptions |
 
 The proof in [02a](02a-polynomial-abc.md) is written out here, not
 transcribed from either source. The IUT I–IV publications, both sides of the
