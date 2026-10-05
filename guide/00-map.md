@@ -10,8 +10,13 @@ questions:
 4. Which comparison is disputed, and what would settle that precise question?
 
 The first question is developed in [01](01-abc-target.md). The prerequisite
-route is [02](02-prerequisites.md); work required to resolve questions 2–4 is
-tracked in [08](08-work-queue.md).
+route is [02](02-prerequisites.md); questions 2–3 have a
+[first-pass IUT route](03-iut-route.md) and
+[claim graph](04-claim-dependencies.md), while question 4 has a
+[source-paired dispute guide](05-critical-transition.md). The
+[Lean audit](06-lean-boundary.md) supplies a *conditional* comparison.
+Work still required to verify the arrows is tracked in
+[08](08-work-queue.md).
 
 ## Two directions of travel
 
@@ -34,9 +39,9 @@ Keep three branches distinct:
 
 | Branch | What to trace | What cannot be inferred |
 | --- | --- | --- |
- Primary papers | Exact premises, constructions, theorem statements, and inference rules | Publication alone does not settle a criticism |
- Criticism and response | The strongest source-grounded versions of *both* interpretations | An objection alone is not a proof of the opposite claim |
- Lean formalization | Exact declarations, assumptions, and verified downstream implications | A conditional theorem does not discharge its premise or validate the transcription |
+| [Primary papers](03-iut-route.md) and [claim graph](04-claim-dependencies.md) | Exact premises, constructions, theorem statements, and inference rules | Publication alone does not settle a criticism |
+| [Criticism and response](05-critical-transition.md) | The strongest source-grounded versions of *both* interpretations | An objection alone is not a proof of the opposite claim |
+| [Lean formalization](06-lean-boundary.md) | Exact declarations, assumptions, and verified downstream implications | A conditional theorem does not discharge its premise or validate the transcription |
 
 ## Evidence labels
 
