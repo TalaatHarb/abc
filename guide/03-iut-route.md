@@ -33,6 +33,34 @@ formalized, or unverified, using the status vocabulary fixed in
 
 ---
 
+## Graduate-level walkthrough (intuition only)
+
+Picture a grid of **distinct labeled arithmetic settings**, not several
+names for the same ring. A horizontal $\Theta$-link relates specified
+pilot data in adjacent theaters; a vertical log-link uses local
+$p$-adic logarithmic data. Neither licenses arbitrary ring operations
+across the link. Reconstruction asks what *named* arithmetic
+information can be recovered from the permitted data and with which
+indeterminacies. Only after identifying an allowed map and a compatible
+normalization can a log-volume in one setting be compared numerically
+with one in another. This grid is a guide to the **claimed**
+construction, not a commutative diagram of ordinary numerical maps.
+
+Read the route as a dependency graph: IUT III Theorem 3.11 supplies a
+representation; Corollary 3.12 claims an estimate through the disputed
+Step (xi); IUT IV specializes it **with additional hypotheses** and
+uses an external `[GenEll]` input before the classical abc reduction.
+If you cannot name the map that carries a *fixed* input value to a
+bounded output, leave that edge open rather than drawing `=`.
+
+**Preparation and orientation, not verification:** the
+[prerequisite route](02-prerequisites.md), the
+[working dictionary](07-dictionary.md), and
+[Wikipedia's anabelian-geometry overview](https://en.wikipedia.org/wiki/Anabelian_geometry).
+The numbered primary-paper references below determine what is asserted.
+
+---
+
 ## 1. Three building blocks: theater, link, reconstruction
 
 IUT's architecture is easiest to narrate in terms of three kinds of object.

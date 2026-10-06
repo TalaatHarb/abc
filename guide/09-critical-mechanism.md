@@ -11,6 +11,33 @@ proof or a verdict on the published argument**. The later
 [Project LANA interim report](sources.md) proposes a more specific
 compatibility test; it explicitly does not prove it.
 
+## Graduate-level walkthrough (intuition only)
+
+The issue is an **ordered comparison between values from different
+constructions**, not just an isomorphism of underlying objects.
+Let $r=-|\log q|$ denote the fixed native $q$-value and
+$s=-|\log\Theta|$ the proposed bound in their respective
+normalizations. Suppose a paper-licensed choice $\beta$ yields a
+normalized output log-volume $t_\beta$ from a hull region, with
+$t_\beta\le s$. To infer $r\le s$, we would still need a compatible
+numerical law such as $r\le t_\beta$ **for that same choice and
+normalization**. Then transitivity supplies the bound. This is an
+elementary conditional implication, **not** an assertion that IUT
+supplies the first inequality.
+
+The ledger below asks how the $\Theta$-link, permutation transport,
+vertical log-Kummer maps, and hull/determinant construction might
+compose. The report's proposed equality of native and reconstructed
+maps is a candidate test, not an established equality; even such
+an equality would need a well-typed evaluation into the *bounded*
+output. A vertical hull-volume bijection is genuine information,
+but does not by itself transport the fixed native $r$ horizontally.
+
+**Further preparation, not proof evidence:** the
+[object-identity ledger](09b-object-identity-ledger.md),
+[dictionary](07-dictionary.md), and
+[Wikipedia on isomorphisms](https://en.wikipedia.org/wiki/Isomorphism).
+
 ## An initial object and transport ledger
 
 The entries below are an *audit index*, not an inventory of all the

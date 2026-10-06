@@ -28,6 +28,33 @@ unavailable 2018 edition of IUT III. The precise Step-(xi) dispute
 remains `DISPUTED`; the checked drawings, elementary calculations,
 and reported conjectures have *different* statuses.
 
+## Graduate-level walkthrough (intuition only)
+
+To read SS's diagram, assign names to **six real-line nodes**
+before trying to commute its paths. If two proposed routes
+$f,g:A\to B$ are supposed to agree but one acts like $f(x)=j^2x$
+and the other like $g(x)=x$, then at $j=2$, $x=1$ they give $4$
+and $1$. This **toy calculation** shows the force of a compatibility
+condition; it does not establish that both routes in the real IUT
+argument have these types or must agree. SS discuss the $j^2$
+factor in their text; it is not a labeled arrow in their figure.
+
+Now read IUT III's hull on a **different** diagram. Inclusion
+$U\subseteq\overline U$ compares **regions**. With a compatible
+monotone log-volume, an upper bound on the hull can bound eligible
+outputs from $U$; inclusion alone cannot place the separately
+fixed input value $r=-|\log q|$ under that bound. Remark 3.9.5
+(Ob8)/(Ob9) gives a vertical bijection of hull log-volumes,
+so the real question is where a **choice-compatible native-value
+comparison** enters, not whether the paper has no vertical map.
+
+**Optional background, not a model of the IUT hull:**
+[isomorphisms](https://en.wikipedia.org/wiki/Isomorphism) and
+[ordinary convex hulls](https://en.wikipedia.org/wiki/Convex_hull)
+on Wikipedia. An IUT holomorphic hull is **not** an ordinary convex
+hull; for source-located arrows consult the table below and
+[the paired dispute](05-critical-transition.md).
+
 ## One key for reading every arrow
 
 | Mark or kind | What it can mean | What it does **not** establish alone |

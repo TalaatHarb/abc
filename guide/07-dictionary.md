@@ -6,6 +6,28 @@ terms have checked references. The IUT watchlist below consists of
 **questions for the primary-paper audit**, not substitute definitions:
 familiar-sounding names in IUT need their own exact source locators.
 
+## Graduate-level walkthrough (intuition only)
+
+For each unfamiliar term, write a **type signature** before an analogy:
+what object enters, which map or construction acts, what exits, and
+which numerical functions it preserves. An isomorphism need not
+preserve an extra measurement that was never part of its structure.
+As a toy example, $\phi:\mathbb R_A\to\mathbb R_B$,
+$\phi(x)=2x$, is an ordered-additive isomorphism, but if both
+copies have the independently assigned evaluation $v(x)=x$,
+then $v_B(\phi(1))=2\ne v_A(1)=1$. This says **nothing**
+about an actual IUT link; it explains why the next question is
+always about the *specified* compatible evaluation.
+
+Use the standard terms below to calculate, then treat the IUT rows
+as prompts to inspect primary definitions rather than as invented
+definitions of Hodge theaters or Frobenioids.
+
+**Background, not source evidence:** the
+[prerequisite route](02-prerequisites.md),
+[Wikipedia on isomorphisms](https://en.wikipedia.org/wiki/Isomorphism),
+and [Wikipedia on étale fundamental groups](https://en.wikipedia.org/wiki/%C3%89tale_fundamental_group).
+
 ## Standard terms and logical distinctions
 
 | Term | Working definition or exact scope | Why we need it; a false shortcut to avoid |

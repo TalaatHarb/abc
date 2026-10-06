@@ -25,6 +25,31 @@ in this file should be read as asserting otherwise.
 
 ---
 
+## Graduate-level walkthrough (intuition only)
+
+A proof assistant checks a **typed implication**, not the truth of every
+hypothesis used to state it. If a Lean theorem has argument `h312 : P`
+and output `ClassicalABC`, it constructs a term of type
+`P -> ClassicalABC`; without a term of type `P` it does **not**
+construct a proof of `ClassicalABC`. Here $P$ is a *stipulated
+Corollary 3.12 variant*, so even a successful kernel check does not
+identify $P$ with the published, disputed inference.
+
+Trace `h312` through the declarations below. Ask at each arrow:
+is its input proved, supplied as a hypothesis, or imported from
+another package? Then distinguish *the kernel accepting the formal
+statement* from *the statement faithfully expressing the paper*.
+Those are separate audits, as is actually running the pinned build
+locally.
+
+**Optional preparation, not evidence for the IUT step:**
+[Buzzard's proof-assistant lecture (video)](https://www.youtube.com/watch?v=0olimWS0SsM),
+[*Theorem Proving in Lean 4*](https://lean-lang.org/theorem_proving_in_lean4/),
+and [Curry--Howard on Wikipedia](https://en.wikipedia.org/wiki/Curry%E2%80%93Howard_correspondence).
+The pinned signatures below, rather than the video, govern this audit.
+
+---
+
 ## 6.1 Snapshot pinned
 
 | Field | Value |

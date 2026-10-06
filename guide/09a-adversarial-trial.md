@@ -6,6 +6,30 @@ Step-(xi) numerical comparison used for Corollary 3.12? The target is
 an auditable proposition or a sharply located open obligation, **not**
 an AI vote on whether abc is true.
 
+## Graduate-level walkthrough (intuition only)
+
+Treat each independent reading like an attempt to type-check **one
+lemma**, not an attempt to win a debate. Set $r=-|\log q|$ and
+$s=-|\log\Theta|$ in their respective normalizations. A model target
+is: for the fixed native $r$ and one admissible choice $\beta$, show
+a comparable $t_\beta$ with $r\le t_\beta$; independently check that
+the same choice gives $t_\beta\le s$. These two premises would imply
+$r\le s$. The experiment must discover whether the *published*
+objects and maps really support such premises, not insert them as
+new axioms.
+
+Source fidelity ("Step (xi-f) prints $r\le s$"), validity of an
+inference from earlier steps, and a conditional Lean proof are
+**different tests**. Multiple readers agreeing on the printed text
+does not discharge the numerical lemma. Record the first arrow
+where types, choices, or normalizations cannot be matched, and
+send any proposed resolution to a human referee.
+
+**Background, not a vote for a proof:** the
+[typed mechanism](09-critical-mechanism.md),
+[prerequisites](02-prerequisites.md), and
+[proof assistants on Wikipedia](https://en.wikipedia.org/wiki/Proof_assistant).
+
 ## Freeze the evidence packet
 
 Use the [source register](sources.md) for official links and edition

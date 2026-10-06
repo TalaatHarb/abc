@@ -26,6 +26,32 @@ The reference in (xi-e) to an *approximate construction of the
 input log-volume* does not qualify away the exact membership printed
 in (xi-f).
 
+## Graduate-level walkthrough (intuition only)
+
+The inequality in (xi-f) is $r\le s$ for **one fixed native $r$**,
+not a claim that *some* output in a hull has value at most $s$.
+Remark 3.9.5 (Ob8)/(Ob9) compares hull log-volumes **vertically**;
+the (xi-c)--(xi-d) hull and determinant operations build an output
+bound. The unresolved composition is a permitted, choice-compatible
+**numerical** route from that fixed $r$ to an output governed by
+the bound. The table below records where each candidate route
+starts and stops without asserting that they compose.
+
+Normalization matters even for elementary inequalities: if both
+sides were multiplied by the **same positive** integer $M$, then
+$Mr\le Ms$ would imply $r\le s$. But the paper's tensor/determinant
+constructions require their *own* source-licensed identifications
+before one may write such an inequality for the native input.
+Likewise "approximate construction" in (xi-e) cannot simply replace
+the **exact** membership asserted in (xi-f). For a row in the
+trace, try naming its source, target, allowed choice, and numerical
+effect before using it as a map.
+
+**Background, not verification:** [the prerequisite route](02-prerequisites.md),
+[the preceding XI-001 experiment](10-xi-001.md), and
+[Arakelov theory on Wikipedia](https://en.wikipedia.org/wiki/Arakelov_theory)
+for general degree/height motivation, not IUT's particular formulas.
+
 ## Corpus, procedure, and status words
 
 The [XI-002 frozen packet](sources.md#xi-002-source-packet-2026-10-06)

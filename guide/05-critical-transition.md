@@ -60,6 +60,33 @@ research. PDF page is distinguished from printed page throughout (per
 
 ---
 
+## Graduate-level walkthrough (intuition only)
+
+There are **two candidate ways to understand the comparison**, and
+this guide does not identify them. Scholze--Stix analyze
+identifications among several abstract, concrete, and arithmetic-degree
+real lines; their text raises a $j^2$ scaling tension if the relevant
+routes must be compatible. The *paper's* Step (xi) instead invokes
+specified indeterminacies and a holomorphic **hull of possible
+outputs**. Enlarging a set can bound its admitted outputs without
+identifying two native numerical coordinates. Neither description
+alone decides whether SS's compatibility requirement is necessary
+for the published route.
+
+For the inference itself, keep $r=-|\log q|$ as a *fixed input*,
+$s=-|\log\Theta|$, and $B_s=\{t:t\le s\}$ as an *output bound*.
+The check is not merely that normalized outputs from a hull obey the
+$B_s$ bound; it is whether the permitted maps and normalizations put
+**this $r$** under that bound. Use the [typed arrow ledger](09b-object-identity-ledger.md)
+to track the copies rather than treating $\cong$ as $=$.
+
+**Optional orientation, not a ruling on either argument:**
+[the prerequisite route](02-prerequisites.md) and
+[Wikipedia on isomorphisms](https://en.wikipedia.org/wiki/Isomorphism).
+The paired passages and edition caveats below are the evidence.
+
+---
+
 ## 5.1 Sources consulted, and live access status (checked 2026-10-05)
 
 | # | Document | Self-declared date | URL | Access status (checked 2026-10-05) |

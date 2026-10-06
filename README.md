@@ -57,6 +57,15 @@ we can reproduce, and a Lean theorem conditional on a proposition are three
 different kinds of evidence. In particular, a checked implication
 `Corollary 3.12 variant -> abc` does not check Corollary 3.12 itself.
 
+Each substantive guide now places a **Graduate-level walkthrough
+(intuition only)** near its opening, after the page's scope or audit
+result. Read it for a worked mental model and prerequisite links, then
+continue into the source-paired argument and its precise stop point.
+The walkthroughs, videos, and informal references do **not** change
+an evidence label or independently verify a disputed IUT inference;
+the [prerequisite route](guide/02-prerequisites.md) collects optional
+starting resources.
+
 The goal is a sequence of explanations that a mathematician can challenge at
 a specific arrow, not a simplified story that hides the arrow. Text here is
 original commentary and links to the source material, not a copy of the

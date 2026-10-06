@@ -40,6 +40,27 @@ out explicitly because it recurs in §5 below.
 | `CONDITIONAL_FORMALIZATION` | A Lean development that checks an implication **given** a named, explicit, unproved input; the input's exact type/statement is recorded, and the input is not itself proved. |
 | `UNVERIFIED` | †A claim, document, or diagram this research pass could not check against a checked primary locator, or could check only at the level of its stated existence/scope, not its technical content. (This file applies the label both to claims "inherited from the plan without a checked locator," as in [00-map.md](00-map.md)'s original sense, and — flagged explicitly where it occurs — to primary documents that *were* read in full but do not themselves constitute a claim, proof, or verification, e.g. a slide deck self-described as a communication aid. See the `IUT-F2` row for the one case this applies to.) |
 
+## Graduate-level walkthrough (intuition only)
+
+This ledger is a **dependency graph**, not a list of theorems whose proofs
+we have reproduced. In its main branch, `IUT-N1` (a representation)
+feeds `IUT-N2` (the disputed log-volume estimate); `IUT-N3` specializes
+that estimate under **extra** elliptic-curve hypotheses. The route to
+`IUT-N4`/`IUT-N5` also imports `[GenEll]`, which does not follow from
+the IUT III estimate. A downstream implication can be perfectly valid
+*conditional on its parent* while leaving that parent's proof open.
+
+For a graduate-reader check, choose `IUT-N2 -> IUT-N3` below: write
+the input statement, the extra hypotheses, and the changed output
+quantity separately. Then compare the Lean row `IUT-F1`: a theorem
+assuming a Corollary 3.12 **variant** cannot certify the original
+`IUT-N2` edge. The status column labels *claims and arrows*, not
+how confidently a reader feels about the whole proof.
+
+**Further background, not evidence for any arrow:** the
+[narrative route](03-iut-route.md), [abc overview](01-abc-target.md),
+and [Wikipedia on elliptic curves](https://en.wikipedia.org/wiki/Elliptic_curve).
+
 ## 2. Claim dependency table
 
 `ID` values are namespaced `IUT-*` to avoid collision with `sources.md`'s own

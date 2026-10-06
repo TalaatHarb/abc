@@ -29,6 +29,17 @@ normalization, without assuming the disputed numerical step.
 Work still required is tracked in
 [08](08-work-queue.md).
 
+## Two reading layers
+
+The substantive pages open with their scope or audited result; a clearly
+marked **Graduate-level walkthrough (intuition only)** then explains the
+same problem in familiar terms before the detailed source audit. Start
+with [the prerequisite route](02-prerequisites.md) and, for the contested
+edge, read the [object-identity walkthrough](09b-object-identity-ledger.md)
+before its source-paired arrows. Calculations and informal links in
+these sections are for learning; the evidence labels and source locators
+in the technical sections determine what has actually been checked.
+
 ## Two directions of travel
 
 ```text

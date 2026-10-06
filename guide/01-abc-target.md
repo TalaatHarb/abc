@@ -26,6 +26,29 @@ formulation uses coprime nonzero $A+B+C=0$, with
 $\max(|A|,|B|,|C|)$ in place of $c$
 ([Goldfeld, §1, PDF p. 1](https://www.math.columbia.edu/~goldfeld/ABC-Conjecture.pdf#page=1)).
 
+## Graduate-level walkthrough (intuition only)
+
+Think of $\log c$ as the size to control and $\log R=\sum_{p\mid abc}\log p$
+as the cost of the **distinct** primes used. For $3+125=128$, $R=30$:
+the large powers of $2$ and $5$ increase the size but each contributes
+its prime only once to $R$. The conjecture says that, for *each* chosen
+slack $\varepsilon>0$, the excess
+$\log c-(1+\varepsilon)\log R$ has a **single upper bound over all**
+primitive triples. Checking many triples cannot establish that uniform
+statement; $\varepsilon=0$ is not what (ABC) asserts.
+
+The later elliptic-curve discussion translates this size-versus-prime-support
+question into height, discriminant, and conductor language **conditionally**;
+none of those quantities may simply be renamed $R$. As a quick check,
+reverse the $\forall\varepsilon\,\exists K_\varepsilon\,\forall(a,b,c)$
+quantifiers and explain why the resulting assertion would be different.
+
+**Optional background, not proof evidence:** [Jeff Vaaler's abc lecture
+(video)](https://www.youtube.com/watch?v=XYisYYhKKYA),
+[Wikipedia's abc overview](https://en.wikipedia.org/wiki/Abc_conjecture),
+and the [prerequisite route](02-prerequisites.md). Use the sourced
+statements below, not those introductions, to check a mathematical claim.
+
 ## Why count primes instead of their powers?
 
 For $n=\prod p^{v_p(n)}$, where $v_p(n)$ is the exponent of $p$,

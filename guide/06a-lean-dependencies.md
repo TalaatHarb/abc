@@ -11,6 +11,28 @@ only; every permalink below was checked against that exact commit today.
 Where a fact could not be re-checked this pass, it is marked `UNVERIFIED`
 rather than carried over.
 
+## Graduate-level walkthrough (intuition only)
+
+Read the ledger as a graph of propositions and their **explicit
+parameters**, not as a list of unconditional successes. Node `0`
+defines the requested inequality as a `Prop`; node `1` consumes a
+proof of that `Prop`. The chain branches through an abstract height
+theory and a tripod specialization, and node `4` supplies a separate
+`StatementII -> StatementI` step. Node `8` fills an auxiliary
+lifting input; node `9` consequently has **one remaining explicit
+hypothesis**, `h312`. A proof of `h312` is not among these nodes.
+
+As an exercise, compare the type at node `3b` with node `9`. Which
+quantifiers and instantiated theories have changed, and which input
+has *not* been discharged? Following the code's dependency arrows
+checks the formal implication, while confirming each definition
+matches IUT III would require a separate source-level argument.
+
+**Background, not a verification of the input:**
+[the high-level Lean boundary](06-lean-boundary.md),
+[*Theorem Proving in Lean 4*](https://lean-lang.org/theorem_proving_in_lean4/),
+and [proof assistants on Wikipedia](https://en.wikipedia.org/wiki/Proof_assistant).
+
 ## 6a.1 Node ledger: ID, exact hypotheses, conclusion
 
 All permalinks share the prefix `.../lana-agents/iut/blob/d9465c111ec4073709f67e9fccec7e3eb374a816/`.

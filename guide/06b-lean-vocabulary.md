@@ -16,6 +16,27 @@ prose.
 bundled paper excerpts under `references/`), re-run directly for this file, not
 recalled from an earlier pass.
 
+## Graduate-level walkthrough (intuition only)
+
+A program can formalize a **numerical shadow** of an object without
+building the object. `QPilotData.lhs` computes a real-valued expression;
+it does not construct the paper's Frobenioid-theoretic $q$-pilot.
+Likewise, the pinned repo has a local, single-theater `logShell`
+construction with proved properties, but no formal inter-theater
+log-link. A field called `thetaPilot` is input data, not a Lean
+implementation of the horizontal $\Theta$-link.
+
+For each row below, check the declaration, its hypotheses, and where
+it is used; then ask whether the *paper's* corresponding object is
+actually constructed. A failed name search is scoped to this
+**pinned checkout**, not proof that no one can formalize the term.
+Conversely, a matching declaration name is not a fidelity proof.
+
+**Background, not a proof-status upgrade:**
+[the elementary dictionary](07-dictionary.md),
+[the pinned dependency audit](06a-lean-dependencies.md),
+and [the Lean 4 textbook](https://lean-lang.org/theorem_proving_in_lean4/).
+
 ## How to read the table
 
 | Status tag | Meaning |

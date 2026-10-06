@@ -24,6 +24,28 @@ $T^m+1=C$ with $A=T^m,B=1$ has many distinct roots in $C$;
 its radical accounts for them even though the power $T^m$
 contributes just one distinct root.
 
+## Graduate-level walkthrough (intuition only)
+
+The derivative is a device for **counting repeated roots**. If a root
+has multiplicity $m$, the expression $W=A'B-AB'$ contains at least
+$m-1$ copies of its linear factor. Rewriting $W$ with $C=A+B$
+collects the same information from roots of all three polynomials.
+The degree of this nonzero $W$ is also at most $\deg A+\deg B-1$,
+so repeated roots cannot consume more degree than the radical
+allows. Work through $A=T^2$, $B=1$, $C=T^2+1$:
+$W=2T$, and over $\mathbb C$ the distinct roots of $ABC$ number
+three. The proof below makes this counting precise.
+
+This is a theorem **about polynomials in characteristic zero**.
+There is no corresponding integer derivative with both of these
+divisibility and degree properties; replacing $\deg$ by $\log$
+is a study analogy, not an abc proof.
+
+**Optional background, not a substitute for the proof:**
+[Mason--Stothers on Wikipedia](https://en.wikipedia.org/wiki/Mason%E2%80%93Stothers_theorem),
+[Conrad's exercises](https://kconrad.math.uconn.edu/ross2003/analogy5.pdf#page=1),
+and [the integer target](01-abc-target.md).
+
 ## Proof, with every divisibility step exposed
 
 1. Set $W=A'B-AB'$, where primes denote formal derivatives.

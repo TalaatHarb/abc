@@ -18,6 +18,31 @@ Advance to level 3 only where a dependency or a disputed step demands it.
 | Hodge theaters, links, log-shells | 1 for orientation; 3 at a disputed comparison | State which copy carries which structure and which map is allowed | IUT III critical step |
 | Lean propositions, assumptions, axioms | 1, then 2 | Inspect the type and assumptions of an implication theorem | Formalization audit |
 
+## Graduate-level walkthrough (intuition only)
+
+There are three separate skills here. **Local arithmetic** measures a
+number at each place: for example $|8|_\infty=8$ but
+$|8|_2=2^{-v_2(8)}=1/8$. **Global arithmetic** combines suitably
+normalized local contributions into a height or degree; a change of
+place or normalization changes which numerical comparison is meaningful.
+**Reconstruction and formalization** ask different questions again:
+recovering geometric data from group-theoretic data needs hypotheses,
+whereas checking a Lean implication still requires its input proposition.
+Neither is permission to identify measurements made in different copies.
+
+Start with $v_p$ and [01's quantifiers](01-abc-target.md), then local
+fields and heights, and only then the étale-group vocabulary. On each
+new IUT arrow, ask what its **source, target, and preserved structure**
+are; the level-1 intuition is not a level-3 proof.
+
+**Optional informal introductions, not IUT evidence:**
+[Vaaler's abc lecture (video)](https://www.youtube.com/watch?v=XYisYYhKKYA),
+[Buzzard's proof-assistant lecture (video)](https://www.youtube.com/watch?v=0olimWS0SsM),
+[Wikipedia on $p$-adic numbers](https://en.wikipedia.org/wiki/P-adic_number)
+and [étale fundamental groups](https://en.wikipedia.org/wiki/%C3%89tale_fundamental_group).
+The [Goldfeld, Stacks, and Lean assignments below](#free-reading-assignments-with-stopping-rules)
+supply more precise definitions and stopping rules.
+
 ## Three short lessons to work before IUT
 
 **Prime support versus magnitude.** For $n=72=2^3 3^2$,
