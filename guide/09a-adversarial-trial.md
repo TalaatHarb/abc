@@ -260,3 +260,23 @@ question, followed by separate **source-fidelity** and
 a bounded source-specific repair rather than counting agreement
 between agents. The tested conditional bridge is ordinary mathematics;
 neither that lemma nor the reported source passages settle Step (xi).
+
+## XI-002: the bounded fixed-native-value trace
+
+The [XI-002 report](11-native-q-trace.md) followed the `XI-NATIVE`
+question above with **three independent neutral readings** of the
+same eight hashed PDFs, then a distinct source-fidelity review and
+a separate mathematical-inference gate. A focused follow-up
+checked the determinant exponent, local volume signs, and
+structure-sheaf correction. The positive (Ob8)/(Ob9) volume
+bijection and the pre-volume prime-strip loop are retained, but
+neither alone places the **specific** native number in the
+bounded output; that choice-compatible numerical bridge remains
+`UNRESOLVED_OBLIGATION` in the inspected passages.
+
+Claims that the weakened horizontal link itself preserves native
+degrees, or that Ob9 selects the fixed $q$ as an output, are
+`SOURCE-MISMATCH` **for those proposed attributions**. No
+`COUNTEREXAMPLE` to the full IUT hypotheses was produced.
+The next useful operation is a human-checkable numbered-lemma
+request, not another round of agent agreement or premature Lean.

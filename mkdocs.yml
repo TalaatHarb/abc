@@ -34,6 +34,7 @@ nav:
       - Object identity and arrows: guide/09b-object-identity-ledger.md
       - Adversarial trial: guide/09a-adversarial-trial.md
       - XI-001 gated experiment: guide/10-xi-001.md
+      - XI-002 native q trace: guide/11-native-q-trace.md
       - Source register: guide/sources.md
 markdown_extensions:
   - toc

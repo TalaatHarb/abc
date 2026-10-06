@@ -17,7 +17,7 @@ results must meet the shared evidence rules in [00](00-map.md).
 | 6 — IUT III | [03](03-iut-route.md), [05](05-critical-transition.md): Theorem 3.11, Corollary 3.12, Step (xi) | Stages 4–5; primary IUT III | Independent expert can check each comparison or point to the exact gap |
 | 7 — dispute | [05](05-critical-transition.md): Scholze–Stix objection and Mochizuki's answer | Stage 6; both sides' primary texts | Each disputed arrow has both interpretations and a testable obligation |
 | 8 — IUT IV and Lean | [04](04-claim-dependencies.md), [06](06-lean-boundary.md), [06a](06a-lean-dependencies.md): downstream claims and conditional Lean assumptions | Stages 0–1; IUT IV; pinned Lean snapshot | Trace a formal declaration to abc without assuming its unproved input |
-| 9 — adversarial review | [09](09-critical-mechanism.md), [09b](09b-object-identity-ledger.md), [09a](09a-adversarial-trial.md), and the [XI-001 gate report](10-xi-001.md): typed comparison, exact six-node/Step-(xi) arrow crosswalk, independent readings, and a bounded first unknown | First-pass locators from stages 6–8; checked [Project LANA report](sources.md) | Type the native-$q$ to bounded-output comparison under the paper's quantified choices; record a source-level map, a countermodel satisfying its actual premises, or the first precise missing premise. Agreement or a vote is not a proof |
+| 9 — adversarial review | [09](09-critical-mechanism.md), [09b](09b-object-identity-ledger.md), [09a](09a-adversarial-trial.md), [XI-001](10-xi-001.md), and the [XI-002 native-value trace](11-native-q-trace.md): typed comparisons, source gates, and a determinant-normalization audit | Frozen primary PDF packet; checked [Project LANA report](sources.md) | Obtain a paper-stated, choice-compatible numerical law from the fixed native $q$ to a bounded output, or record its first unsupported edge. Agent agreement and a toy countermodel are not proof or refutation |
 | 10 — exposition | Connected reader guide and diagrams from checked edges | Stages 0–9 | Each explanation links back to the exact node, arrow, source, and remaining gaps |
 
 ## Next bounded investigations
@@ -60,6 +60,18 @@ are positive source-stated operations, but the audited passages did
 not independently establish the choice-compatible law bounding the
 **fixed** native $q$ value. This is a precisely located request for
 an expert, not Stage 9's proof-level exit test or a verdict on abc.
+
+**XI-002 checkpoint (2026-10-06):** The
+[native-$q$ source trace](11-native-q-trace.md) uses three independent
+same-question readings of the same eight hashed PDFs, followed by a
+separate source-fidelity gate, a normalization check, and a
+mathematical-inference gate. It confirms the vertical hull-volume
+bijection, the corrected determinant and positive $M$, and the exact
+(xi-f) assertion; no source-checked, choice-compatible numerical
+law placing the **fixed** $q$ value below the hull was derived from
+the bounded passages. Next, ask for a numbered, typed lemma with
+the actual normalization and quantifiers; do **not** substitute a
+larger agent vote or formalize an unverified interpretation.
 
 **Phase II object-and-arrow checkpoint (2026-10-06):** The
 [six-node redraw and paper-side ledger](09b-object-identity-ledger.md)

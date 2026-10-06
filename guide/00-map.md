@@ -23,6 +23,9 @@ native-$q$ comparison rather than adding unverified arrows. The
 [XI-001 gated experiment](10-xi-001.md) separates independently checked
 source attributions, conditional deductions, and rejected shortcuts
 for that one arrow.
+The [XI-002 source trace](11-native-q-trace.md) attempts to connect
+the fixed native value to the output bound, including the determinant
+normalization, without assuming the disputed numerical step.
 Work still required is tracked in
 [08](08-work-queue.md).
 

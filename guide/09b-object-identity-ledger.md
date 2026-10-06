@@ -178,4 +178,6 @@ that arrow would answer this local audit; a source-level
 counterexample must satisfy the paper's **actual** hypotheses.
 Until then, the two diagrams give distinct conditional tests,
 not a proof, a refutation, or agreement about abc. The repeatable
-experiment protocol is in [09a](09a-adversarial-trial.md).
+experiment protocol is in [09a](09a-adversarial-trial.md); the
+[XI-002 source trace](11-native-q-trace.md) tests `I-6 -> I-7`
+with a separate normalization mini-audit.
