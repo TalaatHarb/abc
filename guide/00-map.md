@@ -19,7 +19,10 @@ The [critical-mechanism audit](09-critical-mechanism.md) and
 [object-identity ledger](09b-object-identity-ledger.md) distinguish
 SS's real-line comparison diagram from IUT III's hull inclusion.
 The [adversarial trial](09a-adversarial-trial.md) tests the unresolved
-native-$q$ comparison rather than adding unverified arrows.
+native-$q$ comparison rather than adding unverified arrows. The
+[XI-001 gated experiment](10-xi-001.md) separates independently checked
+source attributions, conditional deductions, and rejected shortcuts
+for that one arrow.
 Work still required is tracked in
 [08](08-work-queue.md).
 

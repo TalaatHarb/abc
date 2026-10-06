@@ -33,6 +33,7 @@ nav:
       - Critical mechanism: guide/09-critical-mechanism.md
       - Object identity and arrows: guide/09b-object-identity-ledger.md
       - Adversarial trial: guide/09a-adversarial-trial.md
+      - XI-001 gated experiment: guide/10-xi-001.md
       - Source register: guide/sources.md
 markdown_extensions:
   - toc

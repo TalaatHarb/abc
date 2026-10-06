@@ -12,7 +12,8 @@ Lean formalization has settled the dispute.
 [IUT source route](guide/03-iut-route.md) →
 [Claim dependencies](guide/04-claim-dependencies.md) →
 [The contested step](guide/05-critical-transition.md) →
-[Lean's boundary](guide/06-lean-boundary.md). A reader already comfortable
+[Lean's boundary](guide/06-lean-boundary.md) →
+[XI-001's gated status](guide/10-xi-001.md). A reader already comfortable
 with heights, valuations, and elliptic curves can skip the prerequisite
 route, but should not skip the source or dispute status labels.
 
@@ -35,6 +36,7 @@ route, but should not skip the source or dispute status labels.
 | [Critical-mechanism audit](guide/09-critical-mechanism.md) | A typed object/transport ledger, conditional map-to-bound reduction, diagram, and deliberately limited toy models |
 | [Object-identity ledger](guide/09b-object-identity-ledger.md) | The six distinct SS real-line nodes, IUT III's hull, a source-paired arrow crosswalk, and explicit unresolved maps |
 | [Adversarial trial](guide/09a-adversarial-trial.md) | Independent source readings, a dependent formalizer's test, and the exact remaining proof obligations |
+| [XI-001 gated experiment](guide/10-xi-001.md) | Independent readings, separate source and mathematical gates, rejected shortcuts, and the first unresolved native-$q$ comparison |
 | [Source register](guide/sources.md) | Checked references, pending audits, and a citation policy |
 | [Original plan](Research-project-plan.md) | The motivating proposal; its citations and claims require independent checking |
 

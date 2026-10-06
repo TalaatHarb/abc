@@ -250,3 +250,13 @@ implication given an unproved substitute input. An elementary
 formalization answers neither of the first two questions. This trial
 produced a more precise question for independent experts to test, not
 agreement on its answer.
+
+## XI-001: the first gated one-arrow run
+
+The [XI-001 report](10-xi-001.md) freezes a dated source packet and
+records four independent first readings of the native-$q$ output
+question, followed by separate **source-fidelity** and
+**mathematical-inference** checks. It preserves failed shortcuts and
+a bounded source-specific repair rather than counting agreement
+between agents. The tested conditional bridge is ordinary mathematics;
+neither that lemma nor the reported source passages settle Step (xi).

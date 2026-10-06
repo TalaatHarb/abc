@@ -11,6 +11,8 @@ construction that precede Theorem 3.11 (term scope:
 and does not audit the Lean formalization effort in depth (see
 [06-lean-boundary.md](06-lean-boundary.md) and §5.9; that cross-reference
 sits in a shared, actively-edited directory — §5.12, flag 7).
+For the later, bounded source-and-inference test of the native-$q$
+output membership, see [XI-001](10-xi-001.md).
 
 **The precise contested inference.** Corollary 3.12 ("Log-volume Estimates
 for Θ-Pilot Objects," hosted-PDF pp.173–174 — citation note in §5.3) is

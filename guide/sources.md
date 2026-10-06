@@ -20,7 +20,7 @@ its bibliographic claims are *not* themselves primary evidence.
 | X1 | [Mochizuki, *Arithmetic Elliptic Curves in General Position*](https://www.kurims.kyoto-u.ac.jp/~motizuki/Arithmetic%20Elliptic%20Curves%20in%20General%20Position.pdf) | Its **citation role** in IUT IV, including Theorem 2.1(i), was traced; its proofs were not independently re-derived | External `[GenEll]` input to IUT IV's Corollaries 2.2–2.3 in [04](04-claim-dependencies.md) |
 | O1 | [Mochizuki, *Panoramic Overview of Inter-universal Teichmüller Theory*](https://www.kurims.kyoto-u.ac.jp/~motizuki/Panoramic%20Overview%20of%20Inter-universal%20Teichmuller%20Theory.pdf) | General orientation checked; **not** a proposition-level proof audit | Optional map to the primary-paper terminology in [03](03-iut-route.md) |
 | D1 | [Scholze and Stix, *Why abc is still a conjecture*](https://www.math.uni-bonn.de/people/scholze/WhyABCisStillaConjecture.pdf) | PDF pp. 1, 4, 7–10 (§2.2); diagram glyphs, directions, and absence of a printed $j^2$ or hull arrow checked against the rendered image on p. 10 (2026-10-06); `CHECKED` by delegated source audits | Their objection and interpretation in [05](05-critical-transition.md), [09a](09a-adversarial-trial.md), and the six-node [09b](09b-object-identity-ledger.md) |
-| D2 | [Mochizuki, 2018 comments (`Cmt2018-08.pdf`)](https://www.kurims.kyoto-u.ac.jp/~motizuki/Cmt2018-08.pdf) | PDF pp. 3–4, (C11)–(C14); `CHECKED` by delegated source audit, 2026-10-05 | Reply to the proposed identification in [05](05-critical-transition.md) |
+| D2 | [Mochizuki, 2018 comments (`Cmt2018-08.pdf`)](https://www.kurims.kyoto-u.ac.jp/~motizuki/Cmt2018-08.pdf) | PDF pp. 3–4, (C11)–(C14); pp. 1, 5 on the cited August 2018 SS version; `CHECKED` by delegated source audits, 2026-10-05 and 2026-10-06 | Reply to the proposed identification in [05](05-critical-transition.md) and version caveat in [XI-001](10-xi-001.md) |
 | D3 | [Mochizuki, 2018 report (`Rpt2018.pdf`)](https://www.kurims.kyoto-u.ac.jp/~motizuki/Rpt2018.pdf) | PDF p. 2, pp. 15–20, 22–27, and 42–44; `CHECKED` by delegated source audits, 2026-10-05 | Mochizuki's explanatory analogy and account of the disagreement in [05](05-critical-transition.md) and [09](09-critical-mechanism.md) |
 | D4 | [Project LANA, *Interim Report on IUT Theory* (July 2026, pinned PDF)](https://github.com/katobungen/LANA_report_202607/blob/b8e4636edea64d0b9fdc1d7f6a51e63c1f5d1676/LANA_report_202607.pdf) ([ZEN University announcement](https://zen.ac.jp/news/zmcpostevent0717e)) | PDF pp. 40–49, especially condition (9-1) on p. 46 and provisional assessment on p. 49; `CHECKED`, 2026-10-05; `pdf` branch at commit `b8e4636` (2026-07-20) | The project's proposed two-map compatibility test and explicit lack of a proof of that test; this is an interim analysis, not a Lean theorem or a verdict on IUT |
 | L2 | [LANA `iut` at `d9465c111ec4073709f67e9fccec7e3eb374a816`](https://github.com/lana-agents/iut/tree/d9465c111ec4073709f67e9fccec7e3eb374a816) | [Variant statement, lines 78–91](https://github.com/lana-agents/iut/blob/d9465c111ec4073709f67e9fccec7e3eb374a816/Iut/Cor312/Statement.lean#L78-L91) and [conditional abc capstone, lines 37–46](https://github.com/lana-agents/iut/blob/d9465c111ec4073709f67e9fccec7e3eb374a816/Iut/Tripod/ClassicalAbcGenuineCanLift.lean#L37-L46) (`CHECKED` by delegated source audit, 2026-10-05); external dependency sources unaudited | Downstream implication assumes an unproved Corollary 3.12 variant; see [06](06-lean-boundary.md) and the [pinned dependency ledger](06a-lean-dependencies.md). This is not a verification of IUT. |
@@ -38,6 +38,23 @@ pinned code snapshot (`L2`) or its separate planning document (`L3`):
 its proposed compatibility (9-1) is explicitly unproved there, and
 neither a conditional Lean implication nor a proposed Markdown
 structure supplies that missing argument.
+
+## XI-001 source snapshot (2026-10-06)
+
+The [publisher's record for IUT
+III](https://doi.org/10.4171/PRIMS/57-1-3) gives *Publ. RIMS* 57
+(2021), 403–626. Publication is not a verdict on the disputed inference.
+The following fingerprints distinguish the copies actually read from
+unexamined editions; these PDFs are not distributed with the guide.
+
+| Source ID | Frozen copy and SHA-256 | Access limitation |
+| --- | --- | --- |
+| I3 | Currently hosted official PDF and the local reading copy both `9a7ee3c77b1c7717210c0613eb39b6844649d0040dc3d9e1be7d544f8f91a0b9` | Byte-identical on this date; the IUT III text cited in the 2018 exchange has not been separately matched to this edition |
+| D1 | Local SS PDF `4ec276246a2a92d2e211a0dae5afd073b5eae7e2b37e9bbabe3cb82c7e0b34a0` | The official Bonn PDF is dated July 16, 2018 (p. 1); a fresh Playwright request returned 527,012 bytes with the same hash, without requesting a TLS-validation bypass. An earlier curl attempt failed TLS. The distinct August 2018 SS version cited in D2, pp. 1, 5, has not been compared |
+| D2 | Official comments PDF `2fbd8deb2ca54c728191970bd5a06b81fe12bb68e656a8c684ad6bda86d83e6d` | Only the passages listed above were audited |
+| D3 | Official report PDF `582e3f60e9461c127617844d92440dd60720ee9291da3a693270bcf195221882` | Only the passages listed above were audited |
+| D4 | Report PDF at commit `b8e4636edea64d0b9fdc1d7f6a51e63c1f5d1676`: `aa53093aa8d69dbce5f8fb4f541069a418650260dee1ef532917aa8db89606c7` | Later report revisions, if any, require a separate check |
+| L2 | Git commit `d9465c111ec4073709f67e9fccec7e3eb374a816` (2026-10-03) | This is a code revision, not a PDF fingerprint; external dependencies are not re-audited here |
 
 ## Minimum information for every future citation
 

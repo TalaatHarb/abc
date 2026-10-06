@@ -17,7 +17,7 @@ results must meet the shared evidence rules in [00](00-map.md).
 | 6 — IUT III | [03](03-iut-route.md), [05](05-critical-transition.md): Theorem 3.11, Corollary 3.12, Step (xi) | Stages 4–5; primary IUT III | Independent expert can check each comparison or point to the exact gap |
 | 7 — dispute | [05](05-critical-transition.md): Scholze–Stix objection and Mochizuki's answer | Stage 6; both sides' primary texts | Each disputed arrow has both interpretations and a testable obligation |
 | 8 — IUT IV and Lean | [04](04-claim-dependencies.md), [06](06-lean-boundary.md), [06a](06a-lean-dependencies.md): downstream claims and conditional Lean assumptions | Stages 0–1; IUT IV; pinned Lean snapshot | Trace a formal declaration to abc without assuming its unproved input |
-| 9 — adversarial review | [09](09-critical-mechanism.md), [09b](09b-object-identity-ledger.md), and [09a](09a-adversarial-trial.md): typed comparison, exact six-node/Step-(xi) arrow crosswalk, and independent source readings | First-pass locators from stages 6–8; checked [Project LANA report](sources.md) | Type the native-$q$ to bounded-output comparison under the paper's quantified choices; record a source-level map, a countermodel satisfying its actual premises, or the first precise missing premise. Agreement or a vote is not a proof |
+| 9 — adversarial review | [09](09-critical-mechanism.md), [09b](09b-object-identity-ledger.md), [09a](09a-adversarial-trial.md), and the [XI-001 gate report](10-xi-001.md): typed comparison, exact six-node/Step-(xi) arrow crosswalk, independent readings, and a bounded first unknown | First-pass locators from stages 6–8; checked [Project LANA report](sources.md) | Type the native-$q$ to bounded-output comparison under the paper's quantified choices; record a source-level map, a countermodel satisfying its actual premises, or the first precise missing premise. Agreement or a vote is not a proof |
 | 10 — exposition | Connected reader guide and diagrams from checked edges | Stages 0–9 | Each explanation links back to the exact node, arrow, source, and remaining gaps |
 
 ## Next bounded investigations
@@ -48,6 +48,18 @@ PDF page numbers and printed page numbers can differ; record which is used.
 Prioritize **stage 6**, then **stages 7 and 8**, before producing a polished
 "IUT in 20 diagrams." A diagram is a deliverable only after its edges can be
 audited.
+
+**XI-001 checkpoint (2026-10-06):** The
+[gated report](10-xi-001.md) records four independent one-arrow readings,
+a separate source-fidelity check of the primary PDFs and pinned Lean
+signatures, and an independently checked ordinary-mathematics bridge.
+It preserves a rejected monodromy shortcut that omitted real-linearity
+and a corrected attribution of Mochizuki's one-structure objection.
+IUT III's pre-volume comparison loop and vertical hull-volume bijection
+are positive source-stated operations, but the audited passages did
+not independently establish the choice-compatible law bounding the
+**fixed** native $q$ value. This is a precisely located request for
+an expert, not Stage 9's proof-level exit test or a verdict on abc.
 
 **Phase II object-and-arrow checkpoint (2026-10-06):** The
 [six-node redraw and paper-side ledger](09b-object-identity-ledger.md)
